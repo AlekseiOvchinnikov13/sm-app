@@ -1,7 +1,7 @@
 .product-card {
   overflow: hidden;
   flex-basis: 50%;
-  min-height: 320px;
+  min-height: 330px;
   height: 100%;
   position: relative;
   padding: 30px;
@@ -23,7 +23,9 @@
   &__title {
     font-size: 24px;
     line-height: 29px;
+    font-weight: 500;
     color: white;
+    margin-bottom: 15px;
   }
 
   &__text {
@@ -31,6 +33,14 @@
     font-size: 16px;
     line-height: 22px;
     color: white;
+
+    ul {
+      margin: 0;
+
+      li + li {
+        margin-top: 10px;
+      }
+    }
   }
 
   .product-card__hovered-content {
@@ -49,6 +59,7 @@
     .alternative-text {
       font-size: 24px;
       line-height: 29px;
+      font-weight: 600;
       color: white;
       max-width: 85%;
       opacity: 0;

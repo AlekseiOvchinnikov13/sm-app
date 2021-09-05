@@ -5,6 +5,7 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+  object-fit: cover;
 }
 
 .top-section {
@@ -13,16 +14,12 @@
   &__title {
     max-width: 70%;
     width: 100%;
-
-    font-size: 48px;
-    line-height: 59px;
     margin-bottom: 80px;
   }
 
   &__btn {
     border-radius: 100px;
-    background-color: transparent;
-    background: linear-gradient(98.44deg, #B132FF -24.6%, #4CAEDA 93.48%);
+    background: transparent linear-gradient(98.44deg, #B132FF -24.6%, #4CAEDA 93.48%);
     border: none;
     color: white;
     text-transform: uppercase;
@@ -38,13 +35,58 @@
 }
 
 .middle-section {
-  padding: 70px 0 48px;
-
   .product-cards-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+
+    padding: 70px 0 48px;
+  }
+
+  .competencies-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    &__title {
+      margin-bottom: 80px;
+    }
+
+    .competence-card-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+  }
+
+  .clients-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 48px;
+    padding-bottom: 94px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    .clients-brands-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+    }
   }
 }
