@@ -1,0 +1,10 @@
+.products-content {
+  padding: 32px 0 200px;
+
+  &__card-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+}
