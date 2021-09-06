@@ -1,0 +1,27 @@
+.list-item {
+  padding-left: 15px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+
+.yellow {
+  &:before {
+    background-color: #F0B730;
+  }
+}
+
+.blue {
+  &:before {
+    background-color: #23BBDD;
+  }
+}

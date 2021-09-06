@@ -3,6 +3,7 @@ import React from "react";
 import './scss/style.scss';
 import classNames from "classnames";
 import PageSubTitle from "../../../PageSubTitle";
+import ListPoint from "../../../ListPoint";
 
 const ServiceCard = ({title, text, arrayPoints, className}) => {
   const classes = classNames('service-card', className)
@@ -14,7 +15,7 @@ const ServiceCard = ({title, text, arrayPoints, className}) => {
         <p className="text-wrapper__description">{text}</p>
         <ul className="text-wrapper__points">
           {arrayPoints.map(point =>
-            <li>{point}</li>
+            <ListPoint text={point} className='blue'/>
           )}
         </ul>
       </div>

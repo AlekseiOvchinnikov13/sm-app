@@ -3,15 +3,12 @@ import {Link, NavLink} from "react-router-dom";
 import logo from './img/sma-logo.svg';
 
 import './scss/style.scss';
-import classNames from "classnames";
 
+import classNames from "classnames";
+import {menuItems} from "../../data/data";
 
 const Header = ({className}) => {
-  const menuItems = [
-    {title: 'Услуги', href: '/services'},
-    {title: 'Продукты', href: '/products'},
-    {title: 'Контакты', href: '/contacts'}
-  ]
+
   const classes = classNames('header', className)
   return (
     <header className={classes}>

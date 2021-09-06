@@ -1,0 +1,54 @@
+.section-color-text {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-left: 0;
+
+  .left-block, .right-block {
+    padding: 16px 46px 24px 0;
+    flex-basis: 47%;
+  }
+
+  .left-block {
+    padding-left: 165px;
+    border-radius: 0 24px 24px 0;
+
+    &__price {
+      font-family: Montserrat, sans-serif;
+      font-size: 32px;
+      line-height: 39px;
+      color: white;
+      margin: 10px 0 0;
+    }
+
+  }
+
+  .right-block {
+    padding-left: 20px;
+
+    .right-block__text + .right-block__text {
+      margin-top: 20px;
+    }
+  }
+}
+
+.blue-section .left-block {
+  background-color: #4C9ED0;
+}
+
+.purple-section .left-block {
+  background-color: #B132FF;
+}
+
+.green-section .left-block {
+  background-color: #005738;
+}
+
+.orange-section .left-block {
+  background-color: #F87A03;
+}
+
+
