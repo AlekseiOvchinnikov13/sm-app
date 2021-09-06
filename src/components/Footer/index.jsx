@@ -15,7 +15,7 @@ const Footer = ({className}) => {
           <a href="mailto:sma@post.com" className="left-wrapper__email footer-text">sma@post.com</a>
         </div>
         <div className="footer__right-wrapper">
-          <a href="#" className="right-wrapper__policy footer-text">Политика конфиденциальности</a>
+          <a href="/policy" className="right-wrapper__policy footer-text">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>
