@@ -52,7 +52,7 @@ const Home = props => {
     {
       title: 'Увидеть все наши проекты',
       alternativeText: 'Узнать больше о мобильном приложении водителя',
-      href: '/products/sbm',
+      href: '/products',
       className: 'empty',
       textPosition: 'none',
       img: cardArrow
@@ -87,14 +87,14 @@ const Home = props => {
       <Header/>
       <img src={bg} alt='bg' className='bg-image'/>
 
-      <section className="top-section inner-container">
+      <section className="top-section container inner-container">
         <PageTitle
           className="top-section__title"
           text='Разработка и внедрение сложного программного обеспечения'
         />
         <button className="top-section__btn" id='link-with-us'>Связаться с нами</button>
       </section>
-      <section className="middle-section">
+      <section className="middle-section container">
         <div className="product-cards-wrapper">
           {productCards.map(card =>
             <ProductCard

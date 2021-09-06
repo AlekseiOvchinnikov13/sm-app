@@ -1,13 +1,14 @@
 .header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
   padding: 20px 0;
 
-  &__logo {
-
+  .header-inner-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
   }
 
   &__menu {
@@ -37,4 +38,8 @@
       }
     }
   }
+}
+
+.shadow {
+  box-shadow: 0 4px 22px rgba(0, 0, 0, .08);
 }

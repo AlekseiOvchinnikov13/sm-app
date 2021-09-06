@@ -9,7 +9,7 @@ const App = props => {
 
   return (
     <Router>
-      <div className="App container">
+      <div className="App">
         <Switch>
           <Route path='/contacts' component={Contacts}/>
           <Route path='/products' component={Products}/>
