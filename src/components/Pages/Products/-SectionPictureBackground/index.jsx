@@ -4,24 +4,30 @@ import './scss/style.scss';
 import classNames from "classnames";
 import PageSubTitle from "../../../PageSubTitle";
 import ListPoint from "../../../ListPoint";
+import StepOnBackground from "./-StepsOnBackground";
 
-const SectionPictureBackground = ({title, arrayText, arrayTextForImg, arrayImg, className, bgImg}) => {
-  const classes = classNames('section-picture-background', className)
+const SectionPictureBackground = ({title, arrayText, arrayTextForSteps, arrayImg, className, bgImg}) => {
+  const classes = classNames('section-picture-background container', className)
+  const style = {background: `center / contain no-repeat url(${bgImg})`}
 
   return (
-    <div className={classes}>
+    <section className={classes}>
       <div className="section-picture-background__left-block">
         <PageSubTitle text={title} className='section-picture-background__title'/>
         <ul className='section-picture-background__list'>
           {arrayText.map(point =>
-            <ListPoint text={point} color='blue' className=''/>
+            <ListPoint key={point} text={point} className='blue'/>
           )}
         </ul>
       </div>
       <div className="section-picture-background__right-block">
-
+        <div className="section-picture-background__bg" style={style}/>
+        <StepOnBackground
+          arrayTitles={arrayTextForSteps}
+          arrayImgs={arrayImg}
+        />
       </div>
-    </div>
+    </section>
   )
 }
 

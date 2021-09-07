@@ -10,7 +10,7 @@ const SectionColorText = ({title, listOfLinks, price, listOfText, className}) =>
   const {0: linksArray} = Object.values(listOfLinks)
 
   return (
-    <div className={classes}>
+    <section className={classes}>
       <div className="left-block">
         <PageSubTitle text={title} className='left-block__title color-white'/>
         {linksArray.map(link =>
@@ -24,10 +24,10 @@ const SectionColorText = ({title, listOfLinks, price, listOfText, className}) =>
       </div>
       <div className="right-block">
         {listOfText.map(paragraph =>
-          <p className="right-block__text">{paragraph}</p>
+          <p key={paragraph} className="right-block__text">{paragraph}</p>
         )}
       </div>
-    </div>
+    </section>
   )
 
 }

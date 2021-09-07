@@ -1,0 +1,44 @@
+.section-picture-background {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 80px 0 64px;
+
+  &__left-block, &__right-block {
+    flex-basis: 45%;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 24px 0 0;
+
+    .list-item + .list-item {
+      margin-top: 15px;
+    }
+  }
+
+  &__right-block {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .step-on-background__text, .step-on-background__text::before {
+      color: #4C9ED0;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}

@@ -1,6 +1,9 @@
 .list-item {
   padding-left: 15px;
   position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
 
   &:before {
     position: absolute;

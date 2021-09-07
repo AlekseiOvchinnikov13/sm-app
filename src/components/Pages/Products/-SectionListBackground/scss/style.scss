@@ -1,0 +1,42 @@
+.section-list-background {
+  padding: 100px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &__wrapper {
+    padding: 30px 60px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 24px;
+    height: 280px;
+
+    .section-list-background__title {
+      color: white;
+    }
+
+    .list-background-cards__wrapper, .section-list-background__title {
+      flex-basis: 45%;
+    }
+  }
+}
+
+.section-list-background-blue .section-list-background__wrapper {
+  background: linear-gradient(90deg, #4C9ED0 0%, #4CB6DF 67.5%);
+}
+
+.section-list-background-green .section-list-background__wrapper {
+  background: linear-gradient(270deg, #005738 -7.12%, #90D105 110.6%);
+}
+
+.section-list-background-orange .section-list-background__wrapper {
+  background: linear-gradient(90deg, #F0B730 48.09%, #F87A03 83.75%);
+}
+
