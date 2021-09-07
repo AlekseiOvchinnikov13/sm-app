@@ -15,7 +15,7 @@ const ServiceCard = ({title, text, arrayPoints, className}) => {
         <p className="text-wrapper__description">{text}</p>
         <ul className="text-wrapper__points">
           {arrayPoints.map(point =>
-            <ListPoint text={point} className='blue'/>
+            <ListPoint key={point} text={point} className='blue'/>
           )}
         </ul>
       </div>

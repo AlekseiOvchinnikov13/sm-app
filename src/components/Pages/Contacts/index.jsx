@@ -12,7 +12,7 @@ const Contacts = props => {
 
   return (
     <>
-      <Header/>
+      <Header className='shadow'/>
       <section className="contacts-content container">
         <PageTitle text='Контакты' className='contacts-content__title'/>
         <div className="contacts-content__card-wrapper">
