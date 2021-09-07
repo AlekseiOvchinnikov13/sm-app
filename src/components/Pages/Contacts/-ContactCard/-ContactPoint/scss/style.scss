@@ -1,0 +1,35 @@
+.contact-point {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  &__img {
+    margin-right: 20px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 24px;
+    line-height: 33px;
+    color: black;
+    transition: all .5s ease;
+
+    &:hover, &:focus {
+      color: #4C74B7;
+    }
+  }
+}
+
+.contact-point-email {
+  margin-left: 160px;
+
+  .contact-point__text {
+    color: #4C74B7;
+    transition: all .5s ease;
+
+    &:hover, &:focus {
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.contact-card {
+  padding: 56px 0 113px;
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 45px;
+  }
+}
+
+.contact-card + .contact-card {
+  border-top: 3px solid #23BBDD;
+}
