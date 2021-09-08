@@ -56,6 +56,19 @@ import madScreen4 from "../components/Pages/Products/MAD/img/screen4.png";
 import madScreen5 from "../components/Pages/Products/MAD/img/screen5.png";
 import madScreen6 from "../components/Pages/Products/MAD/img/screen6.png";
 
+import erpAutomationIconPhone from "../components/Pages/Products/ERP/img/erp-phone.svg";
+import erpAutomationIconDoc from "../components/Pages/Products/ERP/img/erp-doc.svg";
+import erpAutomationIconProccess from "../components/Pages/Products/ERP/img/erp-proccess.svg";
+import erpAutomationIconTelegram from "../components/Pages/Products/ERP/img/erp-telegram.svg";
+import erpAutomationIconTruck from "../components/Pages/Products/ERP/img/erp-truck.svg";
+import erpAutomationIconPeople from "../components/Pages/Products/ERP/img/erp-people.svg";
+import erpAutomationIconMoney from "../components/Pages/Products/ERP/img/erp-money.svg";
+import erpAutomationIconSatellite from "../components/Pages/Products/ERP/img/erp-satellite.svg";
+
+import erpArrowDiagonal from "../components/Pages/Products/ERP/img/arrow-diagonal.svg";
+import erpArrowVertical from "../components/Pages/Products/ERP/img/arrow-vertical.svg";
+import erpArrowHorizontal from "../components/Pages/Products/ERP/img/arrow-horizontal.svg";
+
 export const menuItems = [
   {title: 'Услуги', href: '/services'},
   {title: 'Продукты', href: '/products'},
@@ -529,4 +542,126 @@ export const madSectionScreens = [
   madScreen4,
   madScreen5,
   madScreen6
+]
+
+export const erpSectionAutomation = [
+  [
+    {
+      number: 1,
+      title: 'Приложение водителя',
+      icon: erpAutomationIconPhone,
+      className: 'top-left-block',
+    },
+    {
+      className: 'empty-block',
+    },
+    {
+      number: 8,
+      title: 'Мессенджеры',
+      icon: erpAutomationIconTelegram,
+      className: 'middle-left-block',
+    },
+    {
+      className: 'empty-block',
+    },
+    {
+      number: 7,
+      title: '1С:ЗУП',
+      icon: erpAutomationIconPeople,
+      className: 'bottom-left-block',
+    },
+  ],
+  [
+    {
+      className: 'empty-block',
+    },
+    {
+      arrowIcon: erpArrowDiagonal,
+      className: 'top-left-arrow arrow-block'
+    },
+    {
+      arrowIcon: erpArrowVertical,
+      className: 'middle-left-arrow arrow-block'
+    },
+    {
+      arrowIcon: erpArrowDiagonal,
+      className: 'bottom-left-arrow arrow-block'
+    },
+    {
+      className: 'empty-block',
+    },
+  ],
+  [
+    {
+      number: 2,
+      title: 'Электронный документооборот',
+      icon: erpAutomationIconDoc,
+      className: 'top-center-block',
+    },
+    {
+      arrowIcon: erpArrowHorizontal,
+      className: 'top-center-arrow arrow-block'
+    },
+    {
+      number: 0,
+      title: 'Автоматизация транспортной компании',
+      className: 'middle-center-block'
+    },
+    {
+      arrowIcon: erpArrowHorizontal,
+      className: 'bottom-center-arrow arrow-block'
+    },
+    {
+      number: 6,
+      title: '1С:Бухгалтерия',
+      icon: erpAutomationIconMoney,
+      className: 'bottom-center-block',
+    },
+  ],
+  [
+    {
+      className: 'empty-block',
+    },
+    {
+      arrowIcon: erpArrowDiagonal,
+      className: 'top-right-arrow arrow-block'
+    },
+    {
+      arrowIcon: erpArrowVertical,
+      className: 'middle-right-arrow arrow-block'
+    },
+    {
+      arrowIcon: erpArrowDiagonal,
+      className: 'bottom-right-arrow arrow-block'
+    },
+    {
+      className: 'empty-block',
+    },
+  ],
+  [
+    {
+      number: 3,
+      title: 'Процессинговые центры',
+      icon: erpAutomationIconProccess,
+      className: 'top-right-block',
+    },
+    {
+      className: 'empty-block',
+    },
+    {
+      number: 4,
+      title: 'Курьерские службы',
+      icon: erpAutomationIconTruck,
+      className: 'middle-right-block',
+    },
+    {
+      className: 'empty-block',
+    },
+    {
+      number: 5,
+      title: 'GPS мониторинг',
+      icon: erpAutomationIconSatellite,
+      className: 'bottom-right-block',
+    }
+  ]
 ]

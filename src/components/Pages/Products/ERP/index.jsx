@@ -5,8 +5,13 @@ import Header from "../../../Header";
 import Footer from "../../../Footer";
 import PageTitle from "../../../PageTitle";
 import SectionColorText from "../-SectionColorText";
-import {erpSectionColorText as dataSCT, erpSectionDoubleList as dataSDL} from "../../../../data/data";
+import {
+  erpSectionAutomation,
+  erpSectionColorText as dataSCT,
+  erpSectionDoubleList as dataSDL
+} from "../../../../data/data";
 import SectionDoubleList from "../-SectionDoubleList";
+import Block from "./-Block";
 
 const ERP = props => (
   <>
@@ -35,7 +40,20 @@ const ERP = props => (
     />
     <section className="section-automation">
       <div className="section-automation__wrapper container inner-container">
-
+        {erpSectionAutomation.map((block, index) =>
+          <div key={index} className='section-automation__column'>
+            {block.map((items, i) =>
+              <Block
+                key={i}
+                number={items.number}
+                icon={items.icon}
+                title={items.title}
+                arrowIcon={items.arrowIcon}
+                className={`section-automation__block ${items.className}`}
+              />
+            )}
+          </div>
+        )}
       </div>
     </section>
     <Footer/>

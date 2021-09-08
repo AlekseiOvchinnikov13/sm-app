@@ -42,4 +42,23 @@
   background: linear-gradient(90deg, #F5E4FF 15.49%, #FFFFFF 129.02%);
   min-height: 700px;
   margin-bottom: 130px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
