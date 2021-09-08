@@ -1,0 +1,39 @@
+.section-double-list {
+  padding: 64px 0;
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__list {
+    flex-basis: 47%;
+  }
+}
+
+.mad-section-double-list {
+  .section-double-list__wrapper {
+    .section-double-list__list {
+      .list-item {
+        .list-point__title {
+          font-weight: 600;
+        }
+
+        .list-point__title, .list-point__text {
+          margin: 0;
+        }
+      }
+
+      .list-item + .list-item {
+        margin-top: 15px;
+      }
+    }
+  }
+}

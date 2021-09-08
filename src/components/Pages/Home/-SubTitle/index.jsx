@@ -5,6 +5,7 @@ import './scss/style.scss';
 
 const SubTitle = ({text, className}) => {
   const classes = classNames('subtitle', className)
+
   return <h2 className={classes}>{text}</h2>
 }
 

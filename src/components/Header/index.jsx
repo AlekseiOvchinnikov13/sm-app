@@ -8,8 +8,8 @@ import classNames from "classnames";
 import {menuItems} from "../../data/data";
 
 const Header = ({className}) => {
-
   const classes = classNames('header', className)
+
   return (
     <header className={classes}>
       <div className="header-inner-wrapper container">

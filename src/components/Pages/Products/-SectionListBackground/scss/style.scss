@@ -17,6 +17,7 @@
 
     border-radius: 24px;
     height: 280px;
+    width: 100%;
 
     .section-list-background__title {
       color: white;
@@ -25,6 +26,22 @@
     .list-background-cards__wrapper, .section-list-background__title {
       flex-basis: 45%;
     }
+  }
+}
+
+.azs-section-list-background {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mad-section-list-background {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  .list-background-card-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 }
 

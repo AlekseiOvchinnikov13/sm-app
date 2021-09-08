@@ -16,7 +16,6 @@ const Home = props => (
   <>
     <Header/>
     <img src={bg} alt='bg' className='bg-image'/>
-
     <section className="top-section container inner-container">
       <PageTitle
         className="top-section__title"
@@ -64,7 +63,6 @@ const Home = props => (
         </div>
       </div>
     </section>
-
     <Footer/>
   </>
 )

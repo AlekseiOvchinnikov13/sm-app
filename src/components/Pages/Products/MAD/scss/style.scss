@@ -1,0 +1,37 @@
+.section-pictures-on-background {
+  min-height: 600px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 32px 133px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+
+  &__img-wrapper {
+    flex-basis: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-child(1), &:nth-child(3) {
+      margin-top: -190px;
+    }
+
+    &:nth-child(4), &:nth-child(6) {
+      margin-top: -90px;
+    }
+
+    &:nth-child(5) {
+      margin-bottom: -90px;
+    }
+  }
+
+  &__img {
+    width: 50%;
+    object-fit: contain;
+  }
+}

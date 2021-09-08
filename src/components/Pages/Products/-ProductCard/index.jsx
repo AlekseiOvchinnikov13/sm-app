@@ -7,6 +7,7 @@ import {Link} from "react-router-dom";
 
 const ProductCard = ({title, text, img, href, className}) => {
   const classes = classNames('products-card', className)
+
   return (
     <Link className={classes} to={href}>
       <img src={img} alt={title} className='products-card__img'/>

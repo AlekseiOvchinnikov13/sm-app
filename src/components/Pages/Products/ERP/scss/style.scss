@@ -1,0 +1,45 @@
+.section-attention {
+  padding-top: 64px;
+
+  &__inner-wrapper {
+    min-height: 160px;
+    padding: 36px 38px 36px 22px;
+    background: linear-gradient(90deg, #F5E4FF -19.13%, #B132FF 129.02%);
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 400;
+    color: black;
+    padding-left: 13px;
+
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+
+      background: #B132FF;
+      border-radius: 4px;
+
+      width: 3px;
+      height: 123px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.section-automation {
+  background: linear-gradient(90deg, #F5E4FF 15.49%, #FFFFFF 129.02%);
+  min-height: 700px;
+  margin-bottom: 130px;
+}

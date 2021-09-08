@@ -3,7 +3,7 @@ import React from "react";
 import './scss/style.scss';
 import classNames from "classnames";
 import PageSubTitle from "../../../PageSubTitle";
-import InstructionLink from "../-InstructionLink";
+import InstructionLink from "./-InstructionLink";
 
 const SectionColorText = ({title, listOfLinks, price, listOfText, className}) => {
   const classes = classNames('section-color-text container', className)
@@ -29,7 +29,6 @@ const SectionColorText = ({title, listOfLinks, price, listOfText, className}) =>
       </div>
     </section>
   )
-
 }
 
 export default SectionColorText;
