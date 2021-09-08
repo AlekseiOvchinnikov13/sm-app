@@ -12,7 +12,7 @@
   transition: all .5s ease;
 
   &:hover, &:focus {
-    .products-card__text-wrapper .text-wrapper__title {
+    .text-wrapper__title {
       color: #4C74B7;
     }
   }
@@ -22,13 +22,13 @@
     flex-basis: 20%;
   }
 
+  .text-wrapper__title, .text-wrapper__description {
+    color: black;
+  }
+
   &__text-wrapper {
     flex-basis: 60%;
     padding-top: 20px;
-
-    .text-wrapper__title, .text-wrapper__description {
-      color: black;
-    }
 
     .text-wrapper__description {
       font-size: 16px;
