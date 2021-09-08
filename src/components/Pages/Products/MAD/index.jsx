@@ -47,7 +47,7 @@ const MAD = props => {
       <section className='section-pictures-on-background container' style={sectionStyle}>
         {madSectionScreens.map((pic, index) =>
           <div className='section-pictures-on-background__img-wrapper' key={index}>
-            <img src={pic} alt="picture" className='section-pictures-on-background__img'/>
+            <img src={pic} alt="screenshot" className='section-pictures-on-background__img'/>
           </div>
         )}
       </section>
