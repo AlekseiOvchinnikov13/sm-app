@@ -4,6 +4,7 @@ import Header from "../../Header";
 import './scss/style.scss';
 
 import bg from './img/bg-main.jpg';
+import bgMobile from './img/bg-mobile.jpg';
 
 import ProductCard from "./-ProductCard";
 import PageTitle from "../../PageTitle";
@@ -15,7 +16,7 @@ import {brandsArray, competenceCards, productCards} from "../../../data/data";
 const Home = props => (
   <>
     <Header/>
-    <img src={bg} alt='bg' className='bg-image'/>
+    <img src={window.innerWidth <= 834 ? bgMobile : bg} alt='bg' className='bg-image'/>
     <section className="top-section container inner-container">
       <PageTitle
         className="top-section__title"

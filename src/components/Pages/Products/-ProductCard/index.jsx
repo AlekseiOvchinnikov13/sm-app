@@ -10,11 +10,22 @@ const ProductCard = ({title, text, img, href, className}) => {
 
   return (
     <Link className={classes} to={href}>
-      <img src={img} alt={title} className='products-card__img'/>
-      <div className="products-card__text-wrapper">
+      {window.innerWidth > 750 &&
+      (<>
+        <img src={img} alt={title} className='products-card__img'/>
+        <div className="products-card__text-wrapper">
+          <PageSubTitle text={title} className='text-wrapper__title'/>
+          <p className="text-wrapper__description">{text}</p>
+        </div>
+      </>)}
+      {window.innerWidth <= 750 &&
+      (<>
         <PageSubTitle text={title} className='text-wrapper__title'/>
-        <p className="text-wrapper__description">{text}</p>
-      </div>
+        <div className="products-card__text-wrapper">
+          <img src={img} alt={title} className='products-card__img'/>
+          <p className="text-wrapper__description">{text}</p>
+        </div>
+      </>)}
     </Link>
   )
 }

@@ -74,3 +74,22 @@ p, span {
 .products-title {
   padding: 32px 0 45px;
 }
+
+@media (max-width: 1366px) {
+  .container {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .inner-container.inner-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: 0 20px;
+  }
+}

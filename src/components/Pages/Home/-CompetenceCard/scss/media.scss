@@ -1,0 +1,59 @@
+@media (max-width: 1650px) {
+  .competence-card__text-block {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .competence-card__text-block {
+    margin-left: 10px;
+  }
+  .competence-card {
+    flex-basis: 47%;
+  }
+  .middle-section .competencies-wrapper .competence-card-wrapper {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1450px) {
+  .competence-card__text-block {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .competence-card__text-block {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .middle-section .competencies-wrapper .competence-card-wrapper {
+    flex-direction: column;
+  }
+  .competence-card {
+    flex-basis: 100%;
+  }
+  .competence-card__text-block {
+    min-height: 150px;
+  }
+  .competence-card + .competence-card {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .competence-card__img {
+    width: 25%;
+  }
+  .competence-card__text-block .text-block__text {
+    font-size: 14px;
+  }
+  .competence-card__text-block .text-block__title {
+    font-size: 16px;
+  }
+  .competence-card__text-block .text-block__link-wrapper .text-block__link {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,15 @@
+@media (max-width: 910px) {
+  .header .header-inner-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header {
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 550px) {
+  .header__menu .menu-item .menu-link {
+    font-size: 12px;
+  }
+}
