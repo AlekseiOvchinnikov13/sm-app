@@ -17,9 +17,28 @@ import SectionCardsWithIcons from "../-SectionCardsWithIcons";
 import SectionDoubleList from "../-SectionDoubleList";
 
 import sectionBgGreen from './img/mad-bg-section.png';
+import {Carousel} from "react-responsive-carousel";
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const MAD = props => {
   const sectionStyle = {background: `center / contain no-repeat url(${sectionBgGreen})`}
+
+  const settingsSlider = {
+    showThumbs: false,
+    autoPlay: true,
+    selectedItem: 1,
+    showStatus: false,
+    infiniteLoop: true,
+    centerMode: true,
+    centerSlidePercentage: 100,
+    showIndicators: false
+  };
+
+  const phonesBlock = madSectionScreens.map((pic, index) =>
+    <div className='section-pictures-on-background__img-wrapper' key={index}>
+      <img src={pic} alt="screenshot" className='section-pictures-on-background__img'/>
+    </div>
+  )
 
   return (
     <>
@@ -45,11 +64,11 @@ const MAD = props => {
         colorPoint='green'
       />
       <section className='section-pictures-on-background container' style={sectionStyle}>
-        {madSectionScreens.map((pic, index) =>
-          <div className='section-pictures-on-background__img-wrapper' key={index}>
-            <img src={pic} alt="screenshot" className='section-pictures-on-background__img'/>
-          </div>
-        )}
+        {window.innerWidth > 1100 && phonesBlock}
+        {window.innerWidth <= 1100 &&
+        <Carousel {...settingsSlider}>
+          {phonesBlock}
+        </Carousel>}
       </section>
       <SectionCardsWithIcons
         title={dataSCW.title}

@@ -21,7 +21,7 @@ const SectionPictureBackground = ({title, arrayText, arrayTextForSteps, arrayImg
         </ul>
       </div>
       <div className="section-picture-background__right-block">
-        <div className="section-picture-background__bg" style={style}/>
+        {window.innerWidth > 1100 && <div className="section-picture-background__bg" style={style}/>}
         <StepOnBackground
           arrayTitles={arrayTextForSteps}
           arrayImgs={arrayImg}

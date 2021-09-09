@@ -665,3 +665,61 @@ export const erpSectionAutomation = [
     }
   ]
 ]
+
+export const erpSectionAutomationMobile = [
+  [
+    {
+      number: 0,
+      title: 'Автоматизация транспортной компании',
+      className: 'middle-center-block'
+    },
+    {
+      number: 1,
+      title: 'Приложение водителя',
+      className: 'top-left-block',
+      icon: erpAutomationIconPhone,
+    },
+    {
+      number: 2,
+      title: 'Электронный документооборот',
+      className: 'top-center-block',
+      icon: erpAutomationIconDoc,
+    },
+    {
+      number: 3,
+      title: 'Процессинговые центры',
+      className: 'top-right-block',
+      icon: erpAutomationIconProccess,
+    },
+    {
+      number: 4,
+      title: 'Курьерские службы',
+      className: 'middle-right-block',
+      icon: erpAutomationIconTruck,
+    },
+    {
+      number: 5,
+      title: 'GPS мониторинг',
+      className: 'bottom-right-block',
+      icon: erpAutomationIconSatellite,
+    },
+    {
+      number: 6,
+      title: '1С:Бухгалтерия',
+      className: 'bottom-center-block',
+      icon: erpAutomationIconMoney,
+    },
+    {
+      number: 7,
+      title: '1С:ЗУП',
+      className: 'bottom-left-block',
+      icon: erpAutomationIconPeople,
+    },
+    {
+      number: 8,
+      title: 'Мессенджеры',
+      className: 'middle-left-block',
+      icon: erpAutomationIconTelegram,
+    },
+  ],
+]

@@ -1,0 +1,49 @@
+@media (max-width: 1100px) {
+  .section-cards-with-icons {
+    padding: 30px 0;
+  }
+  .section-cards-with-icons__title {
+    margin-bottom: 16px;
+  }
+  .cards-with-icons-wrapper {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 550px) {
+  .section-cards-with-icons .card-with-icon {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 383px) {
+  .section-cards-with-icons .card-with-icon {
+    .card-with-icon__img {
+      min-height: 157px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .section-cards-with-icons .card-with-icon {
+    .card-with-icon__img {
+      min-height: 153px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .section-cards-with-icons .card-with-icon {
+    .card-with-icon__img {
+      min-height: 143px;
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .section-cards-with-icons .card-with-icon {
+    .card-with-icon__img {
+      min-height: 130px;
+    }
+  }
+}

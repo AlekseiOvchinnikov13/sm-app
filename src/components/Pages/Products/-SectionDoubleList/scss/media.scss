@@ -1,0 +1,11 @@
+@media (max-width: 1100px) {
+  .section-double-list {
+    padding: 30px 0;
+  }
+  .section-double-list__wrapper {
+    flex-direction: column;
+  }
+  .section-double-list__title {
+    margin-bottom: 10px;
+  }
+}

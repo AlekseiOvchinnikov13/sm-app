@@ -49,4 +49,11 @@
       color: #F87A03;
     }
   }
+  .section-picture-background__left-block {
+    .list-item::marker {
+      color: #F0B730;
+    }
+  }
 }
+
+@import "media";

@@ -1,0 +1,32 @@
+@media (max-width: 1100px) {
+  .section-list-background.section-list-background {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+  }
+  .section-list-background__wrapper {
+    border-radius: 0;
+  }
+  .section-list-background__wrapper {
+    flex-direction: column-reverse;
+    height: unset;
+    padding: 30px 50px;
+  }
+  .section-list-background__wrapper .list-background-cards__wrapper, .section-list-background__wrapper .section-list-background__title {
+    flex-basis: 100%;
+  }
+  .section-list-background__wrapper .section-list-background__title {
+    margin-bottom: 20px;
+  }
+  .azs-section-list-background.section-list-background {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    .section-list-background__wrapper {
+      padding: 30px 20px;
+    }
+  }
+}
