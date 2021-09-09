@@ -69,12 +69,20 @@ import erpArrowDiagonal from "../components/Pages/Products/ERP/img/arrow-diagona
 import erpArrowVertical from "../components/Pages/Products/ERP/img/arrow-vertical.svg";
 import erpArrowHorizontal from "../components/Pages/Products/ERP/img/arrow-horizontal.svg";
 
+/**
+ * Пункты меню
+ * @type {[{href: string, title: string}, {href: string, title: string}, {href: string, title: string}]}
+ */
 export const menuItems = [
   {title: 'Услуги', href: '/services'},
   {title: 'Продукты', href: '/products'},
   {title: 'Контакты', href: '/contacts'}
 ];
 
+/**
+ * Данные для карточек продуктов на главной странице
+ * @type {[{img, textPosition: string, className: string, text: string, href: string, title: string, alternativeText: string}, {img, textPosition: string, className: string, text: string, href: string, title: string, alternativeText: string}, {img, textPosition: string, className: string, text: string, href: string, title: string, alternativeText: string}, {img, textPosition: string, className: string, href: string, title: string, alternativeText: string}]}
+ */
 export const productCards = [
   {
     title: 'SaaS решения для перевозчиков',
@@ -113,6 +121,10 @@ export const productCards = [
   }
 ];
 
+/**
+ * Данные для карточек продуктов на странице продуктов
+ * @type {[{img, text: string, href: string, title: string}, {img, text: string, href: string, title: string}, {img, text: string, href: string, title: string}, {img, text: string, href: string, title: string}]}
+ */
 export const currentProductsData = [
   {
     title: 'Диспетчеризация автобусов',
@@ -140,6 +152,10 @@ export const currentProductsData = [
   },
 ]
 
+/**
+ * Данные для блока "Чем мы занимаемся" на главной странице
+ * @type {[{img, linkText: string, className: string, text: string, href: string, title: string}, {img, linkText: string, className: string, text: string, href: string, title: string}]}
+ */
 export const competenceCards = [
   {
     title: 'Внедрение  и поддержка готовых продуктов',
@@ -159,12 +175,20 @@ export const competenceCards = [
   }
 ];
 
+/**
+ * Данные для блока "Наши клиенты" на гловной странице
+ * @type {[{img, tooltip: string}, {img, tooltip: string}, {img, tooltip: string}]}
+ */
 export const brandsArray = [
   {img: garavto, tooltip: 'Garavto'},
   {img: tateco, tooltip: 'TatEco'},
   {img: gazprom, tooltip: 'Gazprom'}
 ];
 
+/**
+ * Данные для перечня услуг на странице услуги
+ * @type {[{text: string, title: string, points: string[]}, {text: string, title: string, points: string[]}]}
+ */
 export const servicesArray = [
   {
     title: 'Разработка ПО на заказ',
@@ -187,6 +211,10 @@ export const servicesArray = [
   }
 ];
 
+/**
+ * Данные для перечня контактов на странице контакты
+ * @type {[{phone: string, title: string, email: string}, {phone: string, title: string, email: string}]}
+ */
 export const contactsArray = [
   {
     title: 'Отдел продаж',
@@ -200,29 +228,49 @@ export const contactsArray = [
   }
 ];
 
+/**
+ * Параграфы справа от цветного блока с ценой и ссылками на инструкции на странице Диспетчеризация автобусов
+ * @type {string[]}
+ */
 const sbmListOfText = [
   'Проект был задуман как решение для компаний занимающихся доставкой детей в школы США. Перед такими компаниями остро стоят вопросы оптимизации логистики автобусов.',
   'Менеджеры по логистике тратят огромное количество времени на разработку оптимальных маршрутов, поддержание актуальности, выдаче инструкций водителям, содержание отчетов по посещениям детей.',
   'Без помощи специализированного ПО такая работа занимает 80% времени менеджмента, а в крупных компаниях, обслуживающих по несколько тысяч детей ситуация еще более сложная',
 ];
 
+/**
+ * Параграфы справа от цветного блока с ценой и ссылками на инструкции на странице Erp для транспортной компании
+ * @type {string[]}
+ */
 const erpListOfText = [
   'Тут должен быть совсем небольшой текст о том, что это за продукт. У нас только преимущества, нужно небольшое описание',
   'Менеджеры по логистике тратят огромное количество времени на разработку оптимальных маршрутов, поддержание актуальности, выдаче инструкций водителям, содержание отчетов по посещениям детей.',
   'Без помощи специализированного ПО такая работа занимает 80% времени менеджмента, а в крупных компаниях, обслуживающих по несколько тысяч детей ситуация еще более сложная'
 ];
 
+/**
+ * Параграфы справа от цветного блока с ценой и ссылками на инструкции на странице Мобильное приложение водителя
+ * @type {string[]}
+ */
 const madListOfText = [
   'Тут должен быть совсем небольшой текст о том, что это за продукт. У нас только преимущества, нужно небольшое описание',
   'Менеджеры по логистике тратят огромное количество времени на разработку оптимальных маршрутов, поддержание актуальности, выдаче инструкций водителям, содержание отчетов по посещениям детей.',
   'Без помощи специализированного ПО такая работа занимает 80% времени менеджмента, а в крупных компаниях, обслуживающих по несколько тысяч детей ситуация еще более сложная'
 ];
 
+/**
+ * Параграфы справа от цветного блока с ценой и ссылками на инструкции на странице Безоператорные АЗС
+ * @type {string[]}
+ */
 const azsListOfText = [
   'Топливный модуль — это компактная автозаправочная установка, защищенная от разливов и возгорания, адаптированная для оперативного перемещения с объекта на объект',
   'Конструкция модуля включает в себя резервуар для хранения топлива, топливораздаточную колонку, систему пожаротушения, насосную систему, очистную систему, процессинг и тд.'
 ];
 
+/**
+ * Перечень ссылок на загрузку инструкций на страницах продуктов
+ * @type {[{sbm: [{text: string, href: string}, {text: string, href: string}]}, {erp: [{text: string, href: string}, {text: string, href: string}]}, {mad: [{text: string, href: string}, {text: string, href: string}]}, {azs: [{text: string, href: string}, {text: string, href: string}]}]}
+ */
 const downloadLinks = [
   {
     sbm: [
@@ -274,6 +322,10 @@ const downloadLinks = [
   }
 ];
 
+/**
+ * Данные для цветного блока с ценой и ссылками на инструкции на странице Диспетчеризация автобусов
+ * @type {{price: string, listOfText: string[], title: string, listOfLinks: {sbm: [{text: string, href: string}, {text: string, href: string}]}}}
+ */
 export const sbmSectionColorText = {
   title: 'SaaS решение для транспортных компаний, занимающихся перевозкой пассажиров',
   listOfLinks: downloadLinks[0],
@@ -281,6 +333,10 @@ export const sbmSectionColorText = {
   listOfText: sbmListOfText
 }
 
+/**
+ * Данные для цветного блока с ценой и ссылками на инструкции на странице Erp для транспортной компании
+ * @type {{price: string, listOfText: string[], title: string, listOfLinks: {sbm: [{text: string, href: string}, {text: string, href: string}]}}}
+ */
 export const erpSectionColorText = {
   title: 'Комплексная автоматизация процессов транспортной компании',
   listOfLinks: downloadLinks[1],
@@ -288,6 +344,10 @@ export const erpSectionColorText = {
   listOfText: erpListOfText
 }
 
+/**
+ * Данные для цветного блока с ценой и ссылками на инструкции на странице  Мобильное приложение водителя
+ * @type {{price: string, listOfText: string[], title: string, listOfLinks: {sbm: [{text: string, href: string}, {text: string, href: string}]}}}
+ */
 export const madSectionColorText = {
   title: 'Мобильное приложение водителя для подключения к вашей системе',
   listOfLinks: downloadLinks[2],
@@ -295,6 +355,10 @@ export const madSectionColorText = {
   listOfText: madListOfText
 }
 
+/**
+ * Данные для цветного блока с ценой и ссылками на инструкции на странице Безоператорные АЗС
+ * @type {{price: string, listOfText: string[], title: string, listOfLinks: {sbm: [{text: string, href: string}, {text: string, href: string}]}}}
+ */
 export const azsSectionColorText = {
   title: 'Компактная автозаправочная установка',
   listOfLinks: downloadLinks[3],
@@ -302,6 +366,10 @@ export const azsSectionColorText = {
   listOfText: azsListOfText
 }
 
+/**
+ * Данные для блока со списком и шагами на цветном фоне на странице Диспетчеризация автобусов
+ * @type {{arrayImg: *[], arrayText: string[], bgImg, title: string, arrayTextForSteps: string[]}}
+ */
 export const sbmSectionPictureBackground = {
   title: 'Продукт помогает решить следующие задачи',
   arrayText: [
@@ -324,6 +392,10 @@ export const sbmSectionPictureBackground = {
   bgImg: sbmTaskBg
 }
 
+/**
+ * Данные для блока со списком и шагами на цветном фоне на странице Безоператорные АЗС
+ * @type {{arrayImg: *[], arrayText: string[], bgImg, title: string, arrayTextForSteps: string[]}}
+ */
 export const azsSectionPictureBackground = {
   title: 'Наличие собственного топливного модуля позволяет',
   arrayText: [
@@ -348,6 +420,10 @@ export const azsSectionPictureBackground = {
   bgImg: azsAdvantageskBg
 }
 
+/**
+ * Данные для блока с вертикальными шагами и заголовком на цветном фоне на странице Диспетчеризация автобусов
+ * @type {{arrayItems: [{text: string, title: string}, {text: string, title: string}, {text: string, title: string}, {text: string, title: string}], title: string}}
+ */
 export const sbmSectionListBackground = {
   title: 'Ресурсы для взаимодействия',
   arrayItems: [
@@ -370,6 +446,10 @@ export const sbmSectionListBackground = {
   ]
 }
 
+/**
+ * Данные для блока с вертикальными шагами и заголовком на цветном фоне на странице Мобильное приложение водителя
+ * @type {{arrayItems: [{text: string, title: string}, {text: string, title: string}, {text: string, title: string}, {text: string, title: string}], title: string}}
+ */
 export const madSectionListBackground = {
   title: 'Преимущества мобильного приложения',
   arrayItems: [
@@ -388,6 +468,10 @@ export const madSectionListBackground = {
   ]
 }
 
+/**
+ * Данные для блока с вертикальными шагами и заголовком на цветном фоне на странице Безоператорные АЗС
+ * @type {{arrayItems: [{text: string, title: string}, {text: string, title: string}, {text: string, title: string}, {text: string, title: string}], title: string}}
+ */
 export const azsSectionListBackground = {
   title: 'Дополнительные преимущества',
   arrayItems: [
@@ -410,6 +494,10 @@ export const azsSectionListBackground = {
   ]
 }
 
+/**
+ * Данные для карточек с иконкой на цветном фоне и текстом на странице Диспетчеризация автобусов
+ * @type {{arrayItems: [{bg, icon, text: string}, {bg, icon, text: string}, {bg, icon, text: string}, {bg, icon, text: string}], title: string}}
+ */
 export const sbmSectionCardsWithIcons = {
   title: 'Приложение для водителя автобуса и родительский портал',
   arrayItems: [
@@ -436,6 +524,10 @@ export const sbmSectionCardsWithIcons = {
   ]
 }
 
+/**
+ * Данные для карточек с иконкой на цветном фоне и текстом на странице Мобильное приложение водителя
+ * @type {{arrayItems: [{bg, icon, text: string}, {bg, icon, text: string}, {bg, icon, text: string}, {bg, icon, text: string}], title: string}}
+ */
 export const madSectionCardsWithIcons = {
   title: 'Преимущества мобильного приложения',
   arrayItems: [
@@ -462,6 +554,10 @@ export const madSectionCardsWithIcons = {
   ]
 }
 
+/**
+ * Данные для блока с двумя списками и заголовком на странице Erp для транспортной компании
+ * @type {{secondList: [{text: string}, {text: string}, {text: string}, {text: string}, {text: string}], firstList: [{text: string}, {text: string}, {text: string}, {text: string}, {text: string}, null], title: string}}
+ */
 export const erpSectionDoubleList = {
   title: 'Продукт помогает решить следующие задачи',
   firstList: [
@@ -503,6 +599,10 @@ export const erpSectionDoubleList = {
   ]
 }
 
+/**
+ * Данные для блока с двумя списками и заголовком на странице Мобильное приложение водителя
+ * @type {{secondList: [{text: string}, {text: string}, {text: string}, {text: string}, {text: string}], firstList: [{text: string}, {text: string}, {text: string}, {text: string}, {text: string}, null], title: string}}
+ */
 export const madSectionDoubleList = {
   title: 'Продукт помогает решить следующие задачи',
   firstList: [
@@ -535,6 +635,10 @@ export const madSectionDoubleList = {
   ]
 }
 
+/**
+ * Перечень картинок для блока со скриншотами на странице Мобильное приложение водителя
+ * @type {*[]}
+ */
 export const madSectionScreens = [
   madScreen1,
   madScreen2,
@@ -544,6 +648,10 @@ export const madSectionScreens = [
   madScreen6
 ]
 
+/**
+ * Данные для блока с преимуществами автоматизации на странице Erp для транспортной компании (десктоп)
+ * @type {([{number: number, icon, className: string, title: string}, {className: string}, {number: number, icon, className: string, title: string}, {className: string}, {number: number, icon, className: string, title: string}]|[{className: string}, {arrowIcon, className: string}, {arrowIcon, className: string}, {arrowIcon, className: string}, {className: string}]|[{number: number, icon, className: string, title: string}, {arrowIcon, className: string}, {number: number, className: string, title: string}, {arrowIcon, className: string}, {number: number, icon, className: string, title: string}]|[{className: string}, {arrowIcon, className: string}, {arrowIcon, className: string}, {arrowIcon, className: string}, {className: string}]|[{number: number, icon, className: string, title: string}, {className: string}, {number: number, icon, className: string, title: string}, {className: string}, {number: number, icon, className: string, title: string}])[]}
+ */
 export const erpSectionAutomation = [
   [
     {
@@ -666,6 +774,10 @@ export const erpSectionAutomation = [
   ]
 ]
 
+/**
+ * Данные для блока с преимуществами автоматизации на странице Erp для транспортной компании (мобилка)
+ * @type {[{number: number, className: string, title: string}, {number: number, icon, className: string, title: string}, {number: number, icon, className: string, title: string}, {number: number, icon, className: string, title: string}, {number: number, icon, className: string, title: string}, null, null, null, null][]}
+ */
 export const erpSectionAutomationMobile = [
   [
     {
