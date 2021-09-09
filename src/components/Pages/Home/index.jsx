@@ -22,7 +22,7 @@ const Home = props => (
         className="top-section__title"
         text='Разработка и внедрение сложного программного обеспечения'
       />
-      <button className="top-section__btn" id='link-with-us'>Связаться с нами</button>
+      <a href="mailto:sma@post.com" className="top-section__btn" id='link-with-us'>Связаться с нами</a>
     </section>
     <section className="middle-section container">
       <div className="product-cards-wrapper">
