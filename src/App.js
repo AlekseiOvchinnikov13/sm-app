@@ -10,12 +10,12 @@ import MAD from "./components/Pages/Products/MAD";
 import AZS from "./components/Pages/Products/AZS";
 
 const App = props => {
-  const [size, setSize] = useState([0, 0])
-  const updateSize = (size) => setSize([window.innerWidth, window.innerHeight]);
+  const [, setSize] = useState([0, 0])
+  const updateSize = () => setSize([window.innerWidth, window.innerHeight]);
 
   useLayoutEffect(() => {
     window.addEventListener('resize', updateSize);
-    updateSize(size);
+    updateSize();
     return () => window.removeEventListener('resize', updateSize);
   }, [])
 
