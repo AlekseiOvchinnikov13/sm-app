@@ -8,6 +8,7 @@ import SBM from "./components/Pages/Products/SBM";
 import ERP from "./components/Pages/Products/ERP";
 import MAD from "./components/Pages/Products/MAD";
 import AZS from "./components/Pages/Products/AZS";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = props => {
   const [, setSize] = useState([0, 0])
@@ -21,6 +22,7 @@ const App = props => {
 
   return (
     <Router>
+      <ScrollToTop/>
       <div className="App">
         <Switch>
           <Route path='/contacts' component={Contacts}/>
