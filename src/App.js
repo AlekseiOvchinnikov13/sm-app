@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useLayoutEffect, useState} from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./components/Pages/Home";
 import Contacts from "./components/Pages/Contacts";
@@ -10,6 +10,14 @@ import MAD from "./components/Pages/Products/MAD";
 import AZS from "./components/Pages/Products/AZS";
 
 const App = props => {
+  const [size, setSize] = useState([0, 0])
+  const updateSize = () => setSize([window.innerWidth, window.innerHeight]);
+
+  useLayoutEffect(() => {
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  }, [])
 
   return (
     <Router>

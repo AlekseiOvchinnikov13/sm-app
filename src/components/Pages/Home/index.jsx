@@ -16,7 +16,7 @@ import {brandsArray, competenceCards, productCards} from "../../../data/data";
 const Home = props => (
   <>
     <Header/>
-    <img src={window.innerWidth <= 834 ? bgMobile : bg} alt='bg' className='bg-image'/>
+    <img src={window.innerWidth <= 1024 ? bgMobile : bg} alt='bg' className='bg-image'/>
     <section className="top-section container inner-container">
       <PageTitle
         className="top-section__title"
