@@ -835,3 +835,9 @@ export const erpSectionAutomationMobile = [
     },
   ],
 ]
+
+/**
+ * Ссылка на политику конфедециальности
+ * @type {string}
+ */
+export const policyLink = '/policy'
