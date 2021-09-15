@@ -300,11 +300,11 @@ const downloadLinks = [
     mad: [
       {
         text: 'Инструкция по установке программного обеспечения',
-        href: '/5'
+        href: '/documents/install-mad.pdf'
       },
       {
         text: 'Инструкция по эксплуатации программного обеспечения',
-        href: '/6'
+        href: '/documents/description-mad.pdf'
       }
     ]
   },
@@ -840,4 +840,4 @@ export const erpSectionAutomationMobile = [
  * Ссылка на политику конфедециальности
  * @type {string}
  */
-export const policyLink = '/policy'
+export const policyLink = '/documents/policy.pdf'
