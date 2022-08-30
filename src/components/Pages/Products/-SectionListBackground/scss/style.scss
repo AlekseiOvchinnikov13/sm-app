@@ -34,9 +34,10 @@
   margin-bottom: 50px;
 }
 
-.mad-section-list-background {
+.mad-section-list-background, .arm-section-list-background {
   margin-top: 60px;
   margin-bottom: 60px;
+
   .list-background-card-item {
     display: flex;
     flex-direction: row;

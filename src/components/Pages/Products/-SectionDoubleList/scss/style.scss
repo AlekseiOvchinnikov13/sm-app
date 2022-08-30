@@ -18,7 +18,7 @@
   }
 }
 
-.mad-section-double-list {
+.mad-section-double-list, .arm-section-double-list {
   .section-double-list__wrapper {
     .section-double-list__list {
       .list-item {
@@ -35,6 +35,17 @@
         margin-top: 15px;
       }
     }
+  }
+}
+
+.arm-section-double-list {
+  .section-double-list__title {
+    text-align: center;
+  }
+
+  .section-double-list__wrapper {
+    width: 100%;
+    justify-content: center;
   }
 }
 

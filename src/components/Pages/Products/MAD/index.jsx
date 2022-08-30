@@ -20,7 +20,7 @@ import sectionBgGreen from './img/mad-bg-section.png';
 import {Carousel} from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const MAD = props => {
+const MAD = () => {
   const sectionStyle = {background: `center / contain no-repeat url(${sectionBgGreen})`}
 
   const settingsSlider = {
@@ -51,11 +51,13 @@ const MAD = props => {
         listOfText={dataSCT.listOfText}
         className='mad-top-section green-section'
       />
+      <video className="video-erp-mad" controls src="/documents/video/mad-compress.mp4"/>
       <SectionListBackground
         title={dataSLB.title}
         arrayItems={dataSLB.arrayItems}
         className='mad-section-list-background section-list-background-green'
       />
+      <video className="video-erp" controls src="/documents/video/uat-compress.mp4"></video>
       <SectionDoubleList
         title={dataSDL.title}
         firstList={dataSDL.firstList}

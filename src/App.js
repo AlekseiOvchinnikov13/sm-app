@@ -8,9 +8,10 @@ import SBM from "./components/Pages/Products/SBM";
 import ERP from "./components/Pages/Products/ERP";
 import MAD from "./components/Pages/Products/MAD";
 import AZS from "./components/Pages/Products/AZS";
+import ARM from "./components/Pages/Products/ARM";
 import ScrollToTop from "./components/ScrollToTop";
 
-const App = props => {
+const App = () => {
   const [, setSize] = useState([0, 0])
   const updateSize = () => setSize([window.innerWidth, window.innerHeight]);
 
@@ -30,6 +31,7 @@ const App = props => {
           <Route path='/products/erp' component={ERP}/>
           <Route path='/products/mad' component={MAD}/>
           <Route path='/products/azs' component={AZS}/>
+          <Route path='/products/arm' component={ARM}/>
           <Route path='/products' component={Products}/>
           <Route path='/services' component={Services}/>
           <Route path='/' component={Home}/>
