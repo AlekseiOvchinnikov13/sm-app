@@ -18,21 +18,23 @@
     justify-content: center;
 
     &:nth-child(1), &:nth-child(3) {
-      margin-top: -190px;
+      margin-top: -200px;
     }
 
     &:nth-child(4), &:nth-child(6) {
-      margin-top: -90px;
+      margin-top: -20px;
     }
 
     &:nth-child(5) {
-      margin-bottom: -90px;
+      margin-bottom: -130px;
     }
   }
 
   &__img {
     width: 50%;
     object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.2);
   }
 }
 
