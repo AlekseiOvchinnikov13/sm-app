@@ -293,14 +293,14 @@ const downloadLinks = [
   },
   {
     mad: [
-      {
+      /*{
         text: 'Инструкция по установке программного обеспечения',
         href: '/documents/install-mad.pdf'
       },
       {
         text: 'Инструкция по эксплуатации программного обеспечения',
         href: '/documents/description-mad.pdf'
-      }
+      }*/
     ]
   },
   {
@@ -318,7 +318,7 @@ const downloadLinks = [
 export const sbmSectionColorText = {
   title: 'SaaS решение для транспортных компаний, занимающихся перевозкой пассажиров',
   listOfLinks: downloadLinks[0],
-  price: `100 000 ₽`,
+  // price: `100 000 ₽`,
   listOfText: sbmListOfText
 }
 
@@ -329,7 +329,7 @@ export const sbmSectionColorText = {
 export const erpSectionColorText = {
   title: 'Комплексная автоматизация процессов транспортной компании',
   listOfLinks: downloadLinks[1],
-  price: `100 000 ₽`,
+  // price: `100 000 ₽`,
   listOfText: erpListOfText
 }
 
@@ -340,7 +340,7 @@ export const erpSectionColorText = {
 export const madSectionColorText = {
   title: 'Мобильное приложение водителя для подключения к вашей системе',
   listOfLinks: downloadLinks[2],
-  price: `100 000 ₽`,
+  // price: `100 000 ₽`,
   listOfText: madListOfText
 }
 
@@ -351,7 +351,7 @@ export const madSectionColorText = {
 export const armSectionColorText = {
   title: 'Мобильное приложение "АРМ Механика"',
   listOfLinks: downloadLinks[4],
-  price: `100 000 ₽`,
+  // price: `100 000 ₽`,
   listOfText: armListOfText
 }
 
@@ -362,7 +362,7 @@ export const armSectionColorText = {
 export const azsSectionColorText = {
   title: 'Компактная автозаправочная установка',
   listOfLinks: downloadLinks[3],
-  price: `100 000 ₽`,
+  // price: `100 000 ₽`,
   listOfText: azsListOfText
 }
 
