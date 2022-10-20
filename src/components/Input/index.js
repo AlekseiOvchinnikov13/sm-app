@@ -2,7 +2,7 @@ import './style.scss'
 import classNames from "classnames";
 import {useEffect, useState} from "react";
 
-const Input = ({id, className, type, label, placeholder, isRequired, size, options, isSuccess}) => {
+const Input = ({data: {id, className, type, label, placeholder, isRequired, size, options, isSuccess, min}}) => {
   const classes = classNames('order-input', className, size === 's' ? 'small-input' : size === 'm' ? 'medium-input' : 'long-input')
   const [value, setValue] = useState('');
 
@@ -37,6 +37,7 @@ const Input = ({id, className, type, label, placeholder, isRequired, size, optio
         : <input
           id={id}
           type={type || 'text'}
+          min={min}
           name={id}
           placeholder={placeholder}
           required={isRequired}

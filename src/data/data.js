@@ -6,7 +6,7 @@ import cardArrow from "../components/Pages/Home/-ProductCard/img/card-arrow.svg"
 import productsImg from "../components/Pages/Home/-CompetenceCard/img/competence-products.svg";
 import servicesImg from "../components/Pages/Home/-CompetenceCard/img/competence-services.svg";
 
-// import garavto from "../components/Pages/Home/img/garavto.png";
+import oilcargo from "../components/Pages/Home/img/oilcargo.png";
 import tateco from "../components/Pages/Home/img/tateco.png";
 import gazprom from "../components/Pages/Home/img/gazprom.png";
 import parus from "../components/Pages/Home/img/parus.png";
@@ -99,7 +99,7 @@ export const productCards = [
   {
     title: 'Система планирование ресурсов предприятия',
     text: 'Комплексная автоматизация процессов транспортной компании',
-    alternativeText: 'Узнать больше о система планирование ресурсов предприятия',
+    alternativeText: 'Узнать больше о системе планирование ресурсов предприятия',
     href: '/products/erp',
     className: 'erp',
     textPosition: 'center',
@@ -189,10 +189,10 @@ export const competenceCards = [
  * @type {[{img, tooltip: string}, {img, tooltip: string}, {img, tooltip: string}]}
  */
 export const brandsArray = [
-  // {img: garavto, tooltip: 'Garavto'},
   {img: tateco, tooltip: 'TatEco'},
   {img: gazprom, tooltip: 'Газпром'},
-  {img: parus, tooltip: 'Парус'}
+  {img: parus, tooltip: 'Парус'},
+  {img: oilcargo, tooltip: 'Ойл Карго'},
 ];
 
 /**
@@ -906,6 +906,7 @@ export const FormInputsArray = [
     label: 'Количество сотрудников',
     placeholder: 'Офис и водители',
     type: 'number',
+    min: 0,
     size: 's'
   },
   {
@@ -920,6 +921,7 @@ export const FormInputsArray = [
     label: 'Количество рабочих',
     placeholder: 'В собственной ремонтной зоне',
     type: 'number',
+    min: 0,
     size: 's'
   },
   {
@@ -927,6 +929,7 @@ export const FormInputsArray = [
     label: 'Парк автомобилей',
     placeholder: 'Количество используемых ТС',
     type: 'number',
+    min: 0,
     size: 's'
   },
   {

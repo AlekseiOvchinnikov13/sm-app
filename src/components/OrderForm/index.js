@@ -28,16 +28,10 @@ const OrderForm = () => {
         className='order-form'
         onSubmit={handleSubmit}
       >
-        {FormInputsArray.map(input =>
+        {FormInputsArray.map(inputData =>
           <Input
-            key={input.id}
-            type={input.type}
-            id={input.id}
-            placeholder={input.placeholder}
-            size={input.size}
-            isRequired={input.isRequired}
-            options={input.options}
-            label={input.label}
+            key={inputData.id}
+            data={inputData}
             isSuccess={isSuccess}
           />
         )}
