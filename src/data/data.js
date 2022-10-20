@@ -6,9 +6,10 @@ import cardArrow from "../components/Pages/Home/-ProductCard/img/card-arrow.svg"
 import productsImg from "../components/Pages/Home/-CompetenceCard/img/competence-products.svg";
 import servicesImg from "../components/Pages/Home/-CompetenceCard/img/competence-services.svg";
 
-import garavto from "../components/Pages/Home/img/garavto.png";
+// import garavto from "../components/Pages/Home/img/garavto.png";
 import tateco from "../components/Pages/Home/img/tateco.png";
 import gazprom from "../components/Pages/Home/img/gazprom.png";
+import parus from "../components/Pages/Home/img/parus.png";
 
 import sbmTask1 from "../components/Pages/Products/-SectionPictureBackground/img/sbm-task1.jpg";
 import sbmTask2 from "../components/Pages/Products/-SectionPictureBackground/img/sbm-task2.jpg";
@@ -48,6 +49,7 @@ import ProductMap from "../components/Pages/Products/-ProductCard/img/products-c
 import ProductChart from "../components/Pages/Products/-ProductCard/img/products-card-chart.png";
 import ProductPhone from "../components/Pages/Products/-ProductCard/img/products-card-phone.png";
 import ProductAZS from "../components/Pages/Products/-ProductCard/img/products-card-azs.png";
+import ProductAPM from "../components/Pages/Products/-ProductCard/img/products-card-apm.png";
 
 import madScreen1 from "../components/Pages/Products/MAD/img/screen1.png";
 import madScreen2 from "../components/Pages/Products/MAD/img/screen2.png";
@@ -74,6 +76,7 @@ import erpArrowHorizontal from "../components/Pages/Products/ERP/img/arrow-horiz
  * @type {[{href: string, title: string}, {href: string, title: string}, {href: string, title: string}]}
  */
 export const menuItems = [
+  {title: window.innerWidth > 950 ? 'Оставить заявку' : 'Заявка', href: '/order'},
   {title: 'Услуги', href: '/services'},
   {title: 'Продукты', href: '/products'},
   {title: 'Контакты', href: '/contacts'}
@@ -147,7 +150,7 @@ export const currentProductsData = [
   {
     title: 'Мобильное приложение "АРМ механика"',
     text: 'Удобный инструмент для работы водителей, экспедиторов',
-    img: ProductPhone,
+    img: ProductAPM,
     href: '/products/arm'
   },
   {
@@ -186,9 +189,10 @@ export const competenceCards = [
  * @type {[{img, tooltip: string}, {img, tooltip: string}, {img, tooltip: string}]}
  */
 export const brandsArray = [
-  {img: garavto, tooltip: 'Garavto'},
+  // {img: garavto, tooltip: 'Garavto'},
   {img: tateco, tooltip: 'TatEco'},
-  {img: gazprom, tooltip: 'Gazprom'}
+  {img: gazprom, tooltip: 'Газпром'},
+  {img: parus, tooltip: 'Парус'}
 ];
 
 /**
@@ -872,6 +876,67 @@ export const erpSectionAutomationMobile = [
     },
   ],
 ]
+
+export const FormInputsArray = [
+  {
+    id: 'company',
+    label: 'Наименование организации',
+    isRequired: true,
+    size: 'm'
+  },
+  {
+    id: 'satellite-navigation',
+    label: 'Спутниковая навигация',
+    placeholder: 'Поставщик услуг',
+    size: 'm'
+  },
+  {
+    id: 'base-accounting',
+    label: 'База учета',
+    size: 'm'
+  },
+  {
+    id: 'type-of-services',
+    label: 'Вид услуг',
+    placeholder: 'Перевозка товаров народного потребления, перевозка нефтепродуктов и т.п.',
+    size: 'm'
+  },
+  {
+    id: 'the-number-of-employees',
+    label: 'Количество сотрудников',
+    placeholder: 'Офис и водители',
+    type: 'number',
+    size: 's'
+  },
+  {
+    id: 'own-repair-area',
+    label: 'Собственная ремонтная зона',
+    type: 'select',
+    options: ['', 'Да', 'Нет'],
+    size: 's'
+  },
+  {
+    id: 'the-number-of-workers',
+    label: 'Количество рабочих',
+    placeholder: 'В собственной ремонтной зоне',
+    type: 'number',
+    size: 's'
+  },
+  {
+    id: 'car-park',
+    label: 'Парк автомобилей',
+    placeholder: 'Количество используемых ТС',
+    type: 'number',
+    size: 's'
+  },
+  {
+    id: 'activity-of-the-company',
+    label: window.innerWidth > 950 ? 'Опишите кратко деятельность своей компании' : 'Деятельность компании',
+    isRequired: true,
+    size: 'l'
+  },
+]
+
 
 /**
  * Ссылка на политику конфедециальности

@@ -9,6 +9,7 @@ import ERP from "./components/Pages/Products/ERP";
 import MAD from "./components/Pages/Products/MAD";
 import AZS from "./components/Pages/Products/AZS";
 import ARM from "./components/Pages/Products/ARM";
+import Order from "./components/Pages/Order";
 import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
           <Route path='/products/arm' component={ARM}/>
           <Route path='/products' component={Products}/>
           <Route path='/services' component={Services}/>
+          <Route path='/order' component={Order}/>
           <Route path='/' component={Home}/>
         </Switch>
       </div>

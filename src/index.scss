@@ -75,6 +75,28 @@ p, span {
   padding: 32px 0 45px;
 }
 
+.purple-btn {
+  font-family: 'Montserrat', sans-serif;
+  background: #B132FF;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  height: 62px;
+  border: 1px solid transparent;
+
+  transition: all .3s ease-in-out;
+
+  &:hover, &:focus {
+    background-color: transparent;
+    border: 1px solid #B132FF;
+    color: #B132FF;
+  }
+}
+
 @media (max-width: 1366px) {
   .container {
     margin: 0 50px;

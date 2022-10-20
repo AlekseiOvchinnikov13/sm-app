@@ -1,0 +1,54 @@
+.order-input {
+  display: grid;
+
+  &__label, &__input {
+    color: #646464;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  &__label {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  &__input {
+    border: 1px solid #D9D9D9;
+    border-radius: 12px;
+    padding: 17px 24px;
+  }
+}
+
+.medium-input {
+  grid-column: 1 / span 2;
+}
+
+.long-input {
+  grid-column: 1 / -1;
+}
+
+#wrapper-car-park {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#wrapper-the-number-of-employees,
+#wrapper-own-repair-area,
+#wrapper-the-number-of-workers {
+  grid-row: 5;
+}
+
+@media (max-width: 950px) {
+  .medium-input, .long-input,
+  #wrapper-car-park,
+  #wrapper-the-number-of-employees,
+  #wrapper-own-repair-area,
+  #wrapper-the-number-of-workers {
+    grid-column: 1;
+    grid-row: unset;
+  }
+  #wrapper-car-park {
+    grid-row: 3;
+  }
+}

@@ -22,12 +22,12 @@ const ARM = () => {
         listOfLinks={dataSCT.listOfLinks}
         price={dataSCT.price}
         listOfText={dataSCT.listOfText}
-        className='mad-top-section green-section'
+        className='arm-top-section darkblue-section'
       />
       <SectionListBackground
         title={dataSLB.title}
         arrayItems={dataSLB.arrayItems}
-        className='arm-section-list-background section-list-background-green'
+        className='arm-section-list-background section-list-background-bluegreen'
       />
       <SectionDoubleList
         title={dataSDL.title}

@@ -12,7 +12,7 @@ const Footer = ({className}) => {
     <footer className={classes}>
       <div className="footer-inner-wrapper container">
         <div className="footer__left-wrapper">
-          <p className="left-wrapper__copyright footer-text">&copy;&nbsp;Smart mobile applications, {currentYear}</p>
+          <p className="left-wrapper__copyright footer-text">&copy;&nbsp;Smart mobile applications, 2022{currentYear > 2022 && `-${currentYear}`}</p>
           <a href="tel:+71334736448" className="left-wrapper__phone footer-text">+7 133 473 64 48</a>
           <a href="mailto:sma@post.com" className="left-wrapper__email footer-text">sma@post.com</a>
         </div>
