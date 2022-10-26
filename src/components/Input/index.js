@@ -23,8 +23,6 @@ const Input = ({data: {id, className, type, label, placeholder, isRequired, size
       {type === 'select'
         ? <>
           <Select
-            id={id}
-            name={id}
             value={value}
             onChange={value => setValue(value)}
             className='order-input__input order-input__select'
@@ -40,6 +38,8 @@ const Input = ({data: {id, className, type, label, placeholder, isRequired, size
             }
           </Select>
           <input
+            id={id}
+            name={id}
             type='hidden'
             value={value}
           />
