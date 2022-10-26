@@ -2,7 +2,7 @@
   display: grid;
 
   &__label, &__input {
-    color: #646464;
+    color: #000;
     font-size: 16px;
     line-height: 22px;
     font-family: 'Open Sans', sans-serif;
@@ -19,23 +19,40 @@
     padding: 17px 24px;
     outline: 1px solid transparent;
 
+    &::placeholder {
+      color: #646464;
+    }
+
     &:focus-visible {
       border: 1px solid #4C74B7;
-      box-shadow: 1px 2px 7px 2px rgba(76, 116, 183, 0.65);
+      box-shadow: 1px 2px 7px 1px rgba(76, 116, 183, 0.5);
     }
 
     &:invalid:not([value='']) {
       border: 1px solid #F04438;
-      box-shadow: 1px 2px 7px 2px rgba(240, 68, 56, 0.65);
+      box-shadow: 1px 2px 7px 1px rgba(240, 68, 56, 0.5);
     }
   }
 
   &__select {
-    background: url('./select-arrow.svg') no-repeat right center;
-    background-position-x: calc(100% - 24px);
-    appearance: none;
-    cursor: pointer;
+    padding: 12px 24px 12px 0;
   }
+}
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  padding: 0 !important;
+}
+
+.ant-select-arrow, .ant-select-clear {
+  right: 24px;
+}
+
+.ant-select-arrow {
+  color: #000;
+}
+
+.ant-select-selection-item {
+  padding-left: 24px !important;
 }
 
 .medium-input {

@@ -12,15 +12,15 @@ const ProductCard = ({title, text, href, alternativeText, textPosition, img, cla
     <Link to={href} className={classes}>
       <div className="product-card__inner">
         <h6 className="product-card__title">{title}</h6>
-        <p className="product-card__text"
+        {text && <p className="product-card__text"
            dangerouslySetInnerHTML={{
              __html: text
            }}
-        />
+        />}
       </div>
       {img && <img className='product-card__img' src={img} alt={title}/>}
       <div className="product-card__hovered-content">
-        <h5 className="alternative-text">{alternativeText}</h5>
+        <h6 className="alternative-text">{alternativeText}</h6>
         <img src={arrowImg} className='arrow' alt="arrow"/>
       </div>
     </Link>

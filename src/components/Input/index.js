@@ -1,10 +1,12 @@
 import './style.scss'
 import classNames from "classnames";
 import {useEffect, useState} from "react";
+import {Select} from "antd";
 
 const Input = ({data: {id, className, type, label, placeholder, isRequired, size, options, isSuccess, min}}) => {
   const classes = classNames('order-input', className, size === 's' ? 'small-input' : size === 'm' ? 'medium-input' : 'long-input')
   const [value, setValue] = useState('');
+  const {Option} = Select;
 
   useEffect(() => {
     setValue('');
@@ -19,21 +21,29 @@ const Input = ({data: {id, className, type, label, placeholder, isRequired, size
         {label}
       </label>
       {type === 'select'
-        ? <select
-          id={id}
-          name={id}
-          value={value}
-          onChange={e => setValue(e.target.value)}
-          className='order-input__input order-input__select'
-        >
-          {options.length > 0 &&
-            options.map(option =>
-              <option key={option} value={option}>
-                {option}
-              </option>
-            )
-          }
-        </select>
+        ? <>
+          <Select
+            id={id}
+            name={id}
+            value={value}
+            onChange={value => setValue(value)}
+            className='order-input__input order-input__select'
+            bordered={false}
+            allowClear
+          >
+            {options.length > 0 &&
+              options.map(option =>
+                <Option key={option} value={option}>
+                  {option}
+                </Option>
+              )
+            }
+          </Select>
+          <input
+            type='hidden'
+            value={value}
+          />
+        </>
         : <input
           id={id}
           type={type || 'text'}

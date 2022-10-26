@@ -86,14 +86,12 @@ p, span {
   text-align: center;
   color: #FFFFFF;
   height: 62px;
-  border: 1px solid transparent;
+  border: none;
 
   transition: all .3s ease-in-out;
 
   &:hover, &:focus {
-    background-color: transparent;
-    border: 1px solid #B132FF;
-    color: #B132FF;
+    background-color: #840ECC;
   }
 }
 

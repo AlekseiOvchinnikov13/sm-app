@@ -97,7 +97,7 @@ export const productCards = [
     img: cardMap
   },
   {
-    title: 'Система планирование ресурсов предприятия',
+    title: 'Система планирования ресурсов предприятия',
     text: 'Комплексная автоматизация процессов транспортной компании',
     alternativeText: 'Узнать больше о системе планирование ресурсов предприятия',
     href: '/products/erp',
@@ -913,7 +913,7 @@ export const FormInputsArray = [
     id: 'own-repair-area',
     label: 'Собственная ремонтная зона',
     type: 'select',
-    options: ['', 'Да', 'Нет'],
+    options: ['Да', 'Нет'],
     size: 's'
   },
   {
