@@ -99,7 +99,7 @@ export const productCards = [
   {
     title: 'Система планирования ресурсов предприятия',
     text: 'Комплексная автоматизация процессов транспортной компании',
-    alternativeText: 'Узнать больше о системе планирование ресурсов предприятия',
+    alternativeText: 'Узнать больше о системе планирования ресурсов предприятия',
     href: '/products/erp',
     className: 'erp',
     textPosition: 'center',
@@ -887,17 +887,20 @@ export const FormInputsArray = [
   {
     id: 'satellite-navigation',
     label: 'Спутниковая навигация',
+    isRequired: true,
     placeholder: 'Поставщик услуг',
     size: 'm'
   },
   {
     id: 'base-accounting',
     label: 'База учета',
+    isRequired: true,
     size: 'm'
   },
   {
     id: 'type-of-services',
     label: 'Вид услуг',
+    isRequired: true,
     placeholder: 'Перевозка товаров народного потребления, перевозка нефтепродуктов и т.п.',
     size: 'm'
   },
@@ -927,6 +930,7 @@ export const FormInputsArray = [
   {
     id: 'car-park',
     label: 'Парк автомобилей',
+    isRequired: true,
     placeholder: 'Количество используемых ТС',
     type: 'number',
     min: 0,

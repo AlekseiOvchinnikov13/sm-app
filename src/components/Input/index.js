@@ -1,16 +1,12 @@
 import './style.scss'
 import classNames from "classnames";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import {Select} from "antd";
 
-const Input = ({data: {id, className, type, label, placeholder, isRequired, size, options, isSuccess, min}}) => {
+const Input = ({data: {id, className, type, label, placeholder, isRequired, size, options, min}}) => {
   const classes = classNames('order-input', className, size === 's' ? 'small-input' : size === 'm' ? 'medium-input' : 'long-input')
   const [value, setValue] = useState('');
   const {Option} = Select;
-
-  useEffect(() => {
-    setValue('');
-  }, [isSuccess])
 
   return (
     <div className={classes} id={`wrapper-${id}`}>

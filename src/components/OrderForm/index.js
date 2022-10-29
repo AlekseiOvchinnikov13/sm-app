@@ -4,19 +4,23 @@ import {FormInputsArray} from "../../data/data";
 import Input from "../Input";
 import {useEffect, useState} from "react";
 import ModalWindow from "../ModalWindow";
+import {useHistory} from "react-router";
 
 const OrderForm = () => {
   const [state, handleSubmit] = useForm("meqdlrdz");
-  const [isSuccess, setIsSuccess] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const history = useHistory();
 
   const onClickHandler = () => {
     setIsOpen(!isOpen);
   };
 
+  const btnGreatHandler = () => {
+    history.push('/');
+  }
+
   useEffect(() => {
     if (state.succeeded) {
-      setIsSuccess(true);
       onClickHandler();
     }
   }, [state.succeeded]);
@@ -32,7 +36,6 @@ const OrderForm = () => {
           <Input
             key={inputData.id}
             data={inputData}
-            isSuccess={isSuccess}
           />
         )}
         <button
@@ -50,7 +53,7 @@ const OrderForm = () => {
       >
         <button
           className={'modal-btn purple-btn'}
-          onClick={onClickHandler}
+          onClick={btnGreatHandler}
         >
           Отлично
         </button>
