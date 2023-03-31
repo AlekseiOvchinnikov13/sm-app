@@ -59,7 +59,7 @@
     justify-content: space-between;
 
     .modalHeader, .modalBody {
-      padding: 46px 62px;
+      padding: 25px 24px;
       width: 100%;
     }
 
@@ -72,8 +72,22 @@
         font-family: 'Montserrat', sans-serif;
         color: #000;
         font-weight: 500;
-        font-size: 32px;
-        line-height: 39px;
+        font-size: 24px;
+        line-height: 29px;
+      }
+
+      .button-modal-close {
+        background-color: #F7F7F7;
+        border: none;
+        border-radius: 8px;
+        padding: .5em;
+        font-size: 22px;
+        line-height: 1;
+        font-weight: 900;
+
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
       }
     }
 
@@ -92,6 +106,19 @@
     animation-name: slide-out;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+  }
+}
+
+.modal-form-order, .modal-call {
+  .modalDialog {
+    .modalHeader {
+      padding-bottom: 0;
+    }
+
+    .modalBody {
+      text-align: left;
+      background-color: #fff;
+    }
   }
 }
 
@@ -115,6 +142,32 @@
     .modalBody {
       .modal-btn {
         max-width: 100%;
+      }
+    }
+  }
+
+  .modal-form-order, .modal-call {
+    .modalDialog {
+      .modalHeader {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .modal-form-order {
+    .modalDialog {
+      max-width: 95vw;
+    }
+  }
+}
+
+@media (max-height: 800px) and (max-width: 450px) {
+  .modal-form-order {
+    .modalDialog {
+      max-height: 95vh;
+
+      .modalBody {
+        overflow: auto;
       }
     }
   }

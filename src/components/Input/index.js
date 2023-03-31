@@ -3,7 +3,7 @@ import classNames from "classnames";
 import {useState} from "react";
 import {Select} from "antd";
 
-const Input = ({data: {id, className, type, label, placeholder, isRequired, size, options, min}}) => {
+const Input = ({data: {id, className, type, label, placeholder, isRequired, size, options, min, ...rest}}) => {
   const classes = classNames('order-input', className, size === 's' ? 'small-input' : size === 'm' ? 'medium-input' : 'long-input')
   const [value, setValue] = useState('');
   const {Option} = Select;
@@ -14,7 +14,7 @@ const Input = ({data: {id, className, type, label, placeholder, isRequired, size
         htmlFor={id}
         className='order-input__label'
       >
-        {label}
+        {label}{isRequired && <span className={'required-star'}>*</span>}
       </label>
       {type === 'select'
         ? <>
@@ -50,6 +50,7 @@ const Input = ({data: {id, className, type, label, placeholder, isRequired, size
           value={value}
           onChange={e => setValue(e.target.value)}
           className='order-input__input'
+          {...rest}
         />
       }
     </div>

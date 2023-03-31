@@ -12,8 +12,10 @@ import SubTitle from "./-SubTitle";
 import CompetenceCard from "./-CompetenceCard";
 import Footer from "../../Footer";
 import {brandsArray, competenceCards, productCards} from "../../../data/data";
+import {Link} from "react-router-dom";
+import PhoneCircle from "../../PhoneCircle";
 
-const Home = props => (
+const Home = () => (
   <>
     <Header/>
     <img src={window.innerWidth <= 1024 ? bgMobile : bg} alt='bg' className='bg-image'/>
@@ -22,7 +24,9 @@ const Home = props => (
         className="top-section__title"
         text='Разработка и внедрение сложного программного обеспечения'
       />
-      <a href="mailto:sma@post.com" className="top-section__btn" id='link-with-us'>Связаться с нами</a>
+      <Link to="/contacts" className="top-section__btn" id='link-with-us'>
+        Связаться с нами
+      </Link>
     </section>
     <section className="middle-section container">
       <div className="product-cards-wrapper">
@@ -65,6 +69,7 @@ const Home = props => (
       </div>
     </section>
     <Footer/>
+    <PhoneCircle/>
   </>
 )
 

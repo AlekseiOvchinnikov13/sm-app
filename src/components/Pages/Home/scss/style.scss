@@ -30,6 +30,13 @@
     max-width: 220px;
     width: 100%;
     text-align: center;
+
+    transition: all .3s linear;
+
+    &:hover {
+      color: white;
+      transform: scale(1.03);
+    }
   }
 }
 

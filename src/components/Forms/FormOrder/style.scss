@@ -1,0 +1,34 @@
+#form-order {
+  .form-fields {
+    .order-input + .order-input {
+      margin-top: 16px;
+    }
+
+    .checkbox {
+      margin: 20px 0;
+
+      .ant-checkbox-inner {
+        background-color: #fff;
+        border-color: #B132FF;
+      }
+
+      .ant-checkbox + span {
+        font-size: 12px;
+      }
+    }
+
+    .checkbox-checked {
+      .ant-checkbox-inner {
+        background-color: #B132FF;
+      }
+    }
+  }
+
+  .form-order-btn {
+    width: 100%;
+
+    &:disabled {
+      background-color: rgba(#B132FF, .5);
+    }
+  }
+}

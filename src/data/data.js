@@ -76,7 +76,7 @@ import erpArrowHorizontal from "../components/Pages/Products/ERP/img/arrow-horiz
  * @type {[{href: string, title: string}, {href: string, title: string}, {href: string, title: string}]}
  */
 export const menuItems = [
-  {title: window.innerWidth > 950 ? 'Оставить заявку' : 'Заявка', href: '/order'},
+  {title: window.innerWidth > 950 ? 'Оставить заявку' : 'Заявка', href: '/order', isBtn: true},
   {title: 'Услуги', href: '/services'},
   {title: 'Продукты', href: '/products'},
   {title: 'Контакты', href: '/contacts'}
@@ -877,73 +877,37 @@ export const erpSectionAutomationMobile = [
   ],
 ]
 
-export const FormInputsArray = [
+export const FormOrderInputsArray = [
+  {
+    id: 'name',
+    label: 'Имя',
+    isRequired: true
+  },
+  {
+    id: 'phone',
+    label: 'Номер телефона',
+    isRequired: true,
+    type: 'tel',
+    min: '11',
+    max: '12'
+  },
+  {
+    id: 'email',
+    label: 'Email',
+    isRequired: true,
+    type: 'email'
+  },
   {
     id: 'company',
     label: 'Наименование организации',
-    isRequired: true,
-    size: 'm'
+    isRequired: true
   },
   {
-    id: 'satellite-navigation',
-    label: 'Спутниковая навигация',
-    isRequired: true,
-    placeholder: 'Поставщик услуг',
-    size: 'm'
-  },
-  {
-    id: 'base-accounting',
-    label: 'База учета',
-    isRequired: true,
-    size: 'm'
-  },
-  {
-    id: 'type-of-services',
-    label: 'Вид услуг',
-    isRequired: true,
-    placeholder: 'Перевозка товаров народного потребления, перевозка нефтепродуктов и т.п.',
-    size: 'm'
-  },
-  {
-    id: 'the-number-of-employees',
-    label: 'Количество сотрудников',
-    placeholder: 'Офис и водители',
-    type: 'number',
-    min: 0,
-    size: 's'
-  },
-  {
-    id: 'own-repair-area',
-    label: 'Собственная ремонтная зона',
-    type: 'select',
-    options: ['Да', 'Нет'],
-    size: 's'
-  },
-  {
-    id: 'the-number-of-workers',
-    label: 'Количество рабочих',
-    placeholder: 'В собственной ремонтной зоне',
-    type: 'number',
-    min: 0,
-    size: 's'
-  },
-  {
-    id: 'car-park',
-    label: 'Парк автомобилей',
-    isRequired: true,
-    placeholder: 'Количество используемых ТС',
-    type: 'number',
-    min: 0,
-    size: 's'
-  },
-  {
-    id: 'activity-of-the-company',
-    label: window.innerWidth > 950 ? 'Опишите кратко деятельность своей компании' : 'Деятельность компании',
-    isRequired: true,
-    size: 'l'
-  },
-]
-
+    id: 'position',
+    label: 'Должность',
+    isRequired: true
+  }
+];
 
 /**
  * Ссылка на политику конфедециальности
