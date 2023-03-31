@@ -5,16 +5,12 @@ import {useEffect, useState} from "react";
 import './style.scss';
 import {Checkbox} from "antd";
 
-const FormOrder = () => {
+const FormOrder = ({onClose}) => {
   const [state, handleSubmit] = useForm("xyyankdp");
-  const [isOpen, setIsOpen] = useState(false);
-  const onClickHandler = () => {
-    setIsOpen(!isOpen);
-  };
 
   useEffect(() => {
     if (state.succeeded) {
-      onClickHandler();
+      onClose()
     }
   }, [state.succeeded]);
 

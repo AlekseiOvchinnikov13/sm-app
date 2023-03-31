@@ -13,6 +13,8 @@ const Header = ({className}) => {
   const classes = classNames('header', className)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
+  const onClose = () => setIsModalOpen(!isModalOpen)
+
   return (
     <header className={classes}>
       <div className="header-inner-wrapper container">
@@ -40,11 +42,11 @@ const Header = ({className}) => {
         <ModalWindow
           title={'Оставить заявку'}
           visible={isModalOpen}
-          onClose={() => setIsModalOpen(!isModalOpen)}
+          onClose={onClose}
           className={'modal-form-order'}
           withClose
         >
-          <FormOrder/>
+          <FormOrder onClose={onClose}/>
         </ModalWindow>}
     </header>
   )
