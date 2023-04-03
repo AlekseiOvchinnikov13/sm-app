@@ -27,13 +27,13 @@
   }
 
   &__left-wrapper {
-    flex-basis: 50%;
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+
+    gap: 20px;
 
     .left-wrapper__phone {
       transition: all .5s ease;
@@ -54,8 +54,6 @@
   }
 
   &__right-wrapper {
-    flex-basis: 20%;
-
     .right-wrapper__policy {
       transition: all .5s ease;
 

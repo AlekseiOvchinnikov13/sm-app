@@ -12,17 +12,29 @@ const ContactPoint = ({text, className, isPhone, isEmail}) => {
     {'contact-point-phone': isPhone},
     {'contact-point-email': isEmail})
 
-  const href = isPhone
-    ? `tel:${text.replaceAll(' ', '').replaceAll('-', '')}`
-    : `mailto:${text}`
+  const href = str => isPhone
+    ? `tel:${str.replaceAll(' ', '').replaceAll('-', '')}`
+    : `mailto:${str}`
 
   const img = isEmail ? emailIcon : phoneIcon
 
   return (
-    <a href={href} className={classes}>
-      <img src={img} alt={text} className="contact-point__img"/>
-      <p className="contact-point__text">{text}</p>
-    </a>
+    <>
+      {text instanceof Array
+        ? <>
+          {text.map(element =>
+            <a href={href(element)} className={classes} key={element}>
+              <img src={img} alt={element} className="contact-point__img"/>
+              <p className="contact-point__text">{element}</p>
+            </a>
+          )}
+        </>
+        : <a href={href(text)} className={classes}>
+          <img src={img} alt={text} className="contact-point__img"/>
+          <p className="contact-point__text">{text}</p>
+        </a>
+      }
+    </>
   )
 }
 

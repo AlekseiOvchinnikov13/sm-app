@@ -1,11 +1,9 @@
 import './style.scss'
 import classNames from "classnames";
-import {useState} from "react";
 import {Select} from "antd";
 
-const Input = ({data: {id, className, type, label, placeholder, isRequired, size, options, min, ...rest}}) => {
+const Input = ({data: {id, className, type, label, placeholder, isRequired, size, options, min, ...rest}, value, onChange}) => {
   const classes = classNames('order-input', className, size === 's' ? 'small-input' : size === 'm' ? 'medium-input' : 'long-input')
-  const [value, setValue] = useState('');
   const {Option} = Select;
 
   return (
@@ -20,7 +18,7 @@ const Input = ({data: {id, className, type, label, placeholder, isRequired, size
         ? <>
           <Select
             value={value}
-            onChange={value => setValue(value)}
+            onChange={onChange}
             className='order-input__input order-input__select'
             bordered={false}
             allowClear
@@ -48,7 +46,7 @@ const Input = ({data: {id, className, type, label, placeholder, isRequired, size
           placeholder={placeholder}
           required={isRequired}
           value={value}
-          onChange={e => setValue(e.target.value)}
+          onChange={onChange}
           className='order-input__input'
           {...rest}
         />

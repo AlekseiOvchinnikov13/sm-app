@@ -1,16 +1,6 @@
 @media (max-width: 1600px) {
   .footer__right-wrapper {
-    flex-basis: 50%;
     text-align: right;
-  }
-}
-
-@media (max-width: 1150px) {
-  .footer__left-wrapper {
-    flex-basis: 60%;
-  }
-  .footer__right-wrapper {
-    flex-basis: 30%;
   }
 }
 

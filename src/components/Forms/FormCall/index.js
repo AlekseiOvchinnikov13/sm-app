@@ -42,6 +42,7 @@ const FormCall = ({onSuccess}) => {
           type={'tel'}
           min={11}
           max={12}
+          placeholder={'+7 (___) ___-__-__'}
           name={'phone'}
           required
           className='order-input__input'

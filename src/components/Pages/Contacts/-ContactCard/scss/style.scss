@@ -2,10 +2,9 @@
   padding: 56px 0 113px;
 
   &__text-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     margin-top: 45px;
   }
 }

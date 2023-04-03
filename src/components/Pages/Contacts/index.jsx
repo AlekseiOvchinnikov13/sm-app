@@ -7,8 +7,9 @@ import Footer from "../../Footer";
 import PageTitle from "../../PageTitle";
 import {contactsArray} from "../../../data/data";
 import ContactCard from "./-ContactCard";
+import PhoneCircle from "../../PhoneCircle";
 
-const Contacts = props => (
+const Contacts = () => (
   <>
     <Header className='shadow'/>
     <section className="contacts-content container">
@@ -25,6 +26,7 @@ const Contacts = props => (
       </div>
     </section>
     <Footer/>
+    <PhoneCircle/>
   </>
 )
 

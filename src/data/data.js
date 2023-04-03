@@ -233,7 +233,7 @@ export const contactsArray = [
   },
   {
     title: 'Техническая поддержка',
-    phone: '+7 909 306 11 11',
+    phone: ['+7 909 306 11 11', '+7 967 779 99 71'],
     email: 'support@smartapp.su'
   }
 ];
@@ -889,7 +889,8 @@ export const FormOrderInputsArray = [
     isRequired: true,
     type: 'tel',
     min: '11',
-    max: '12'
+    max: '12',
+    placeholder:'+7 (___) ___-__-__'
   },
   {
     id: 'email',

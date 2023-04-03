@@ -22,7 +22,8 @@
 }
 
 .contact-point-email {
-  margin-left: 160px;
+  grid-column: 2;
+  grid-row: 1;
 
   .contact-point__text {
     color: #4C74B7;
@@ -31,5 +32,12 @@
     &:hover, &:focus {
       color: black;
     }
+  }
+}
+
+@media (max-width: 950px) {
+  .contact-point-email {
+    grid-column: unset;
+    grid-row: unset;
   }
 }

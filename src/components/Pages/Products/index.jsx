@@ -8,8 +8,9 @@ import PageTitle from "../../PageTitle";
 
 import ProductCard from "./-ProductCard";
 import {currentProductsData} from "../../../data/data";
+import PhoneCircle from "../../PhoneCircle";
 
-const Products = props => (
+const Products = () => (
   <>
     <Header className='shadow'/>
     <section className="products-content container">
@@ -27,6 +28,7 @@ const Products = props => (
       </div>
     </section>
     <Footer/>
+    <PhoneCircle/>
   </>
 )
 

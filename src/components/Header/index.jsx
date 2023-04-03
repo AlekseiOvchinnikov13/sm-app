@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Link, NavLink} from "react-router-dom";
 import logo from './img/sma-logo.svg';
 
@@ -11,9 +11,17 @@ import FormOrder from "../Forms/FormOrder";
 
 const Header = ({className}) => {
   const classes = classNames('header', className)
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalOrderOpen, setIsModalOrderOpen] = useState(false)
+  const modalOrderHandler = () => setIsModalOrderOpen(!isModalOrderOpen)
 
-  const onClose = () => setIsModalOpen(!isModalOpen)
+  const [isSuccess, setIsSuccess] = useState(false)
+  const successHandler = () => setIsSuccess(!isSuccess);
+  const [isModalSuccessOpen, setIsModalSuccessOpen] = useState(false)
+  const modalSuccessHandler = () => setIsModalSuccessOpen(!isModalSuccessOpen)
+
+  useEffect(() => {
+    isSuccess && modalSuccessHandler() && successHandler()
+  }, [isSuccess])
 
   return (
     <header className={classes}>
@@ -27,7 +35,7 @@ const Header = ({className}) => {
               {menuItem.isBtn
                 ? <button
                   className='menu-link menu-link-button'
-                  onClick={() => setIsModalOpen(true)}
+                  onClick={modalOrderHandler}
                 >
                   {menuItem.title}
                 </button>
@@ -38,15 +46,26 @@ const Header = ({className}) => {
             </li>)}
         </ul>
       </div>
-      {isModalOpen &&
+      {isModalOrderOpen &&
         <ModalWindow
           title={'Оставить заявку'}
-          visible={isModalOpen}
-          onClose={onClose}
+          visible={isModalOrderOpen}
+          onClose={modalOrderHandler}
           className={'modal-form-order'}
           withClose
         >
-          <FormOrder onClose={onClose}/>
+          <FormOrder
+            onClose={modalOrderHandler}
+            successHandler={successHandler}
+          />
+        </ModalWindow>}
+      {isModalSuccessOpen &&
+        <ModalWindow
+          visible={isModalSuccessOpen}
+          onClose={modalSuccessHandler}
+          title={'Спасибо! Форма отправлена!'}
+        >
+          <button className={'purple-btn'} style={{width: '100%'}} onClick={modalSuccessHandler}>Отлично</button>
         </ModalWindow>}
     </header>
   )

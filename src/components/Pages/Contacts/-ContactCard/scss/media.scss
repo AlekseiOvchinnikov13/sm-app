@@ -1,5 +1,7 @@
 @media (max-width: 950px) {
   .contact-card__text-wrapper {
+    grid-template-columns: 1fr;
+
     .contact-point__text {
       font-size: 14px;
       line-height: 19px;
@@ -20,13 +22,9 @@
     margin-top: 20px;
 
     .contact-point-email {
-      margin-left: 0;
-      margin-top: 15px;
-
       .contact-point__img {
         margin-right: 10px;
       }
     }
   }
-
 }

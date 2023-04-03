@@ -44,11 +44,11 @@
 
   .modalDialog {
     width: 100%;
-    max-width: 550px;
-    margin: 0 20px;
+    max-width: 450px;
+    margin: 0 5px;
 
     background-color: #fff;
-    border-radius: 25px;
+    border-radius: 20px;
     animation-name: slide-in;
     animation-duration: 0.5s;
 
@@ -80,7 +80,7 @@
         background-color: #F7F7F7;
         border: none;
         border-radius: 8px;
-        padding: .5em;
+        padding: .25em .5em .5em;
         font-size: 22px;
         line-height: 1;
         font-weight: 900;

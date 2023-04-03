@@ -6,7 +6,7 @@ import PageSubTitle from "../../../PageSubTitle";
 import ContactPoint from "./-ContactPoint";
 
 const ContactCard = ({title, phone, email, className}) => {
-  const classes = classNames('contact-card', className)
+  const classes = classNames('contact-card', className, phone instanceof Array ? 'contact-card-few-text' : '' )
 
   return (
     <div className={classes}>

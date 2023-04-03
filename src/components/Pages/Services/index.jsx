@@ -7,8 +7,9 @@ import Footer from "../../Footer";
 import PageTitle from "../../PageTitle";
 import ServiceCard from "./-ServiceCard";
 import {servicesArray} from "../../../data/data";
+import PhoneCircle from "../../PhoneCircle";
 
-const Services = props => (
+const Services = () => (
   <>
     <Header className='shadow'/>
     <section className="services-content container">
@@ -25,6 +26,7 @@ const Services = props => (
       </div>
     </section>
     <Footer/>
+    <PhoneCircle/>
   </>
 )
 
