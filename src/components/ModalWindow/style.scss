@@ -59,7 +59,7 @@
     justify-content: space-between;
 
     .modalHeader, .modalBody {
-      padding: 25px 24px;
+      padding: 24px;
       width: 100%;
     }
 
@@ -92,7 +92,8 @@
     }
 
     .modalBody {
-      background-color: #F5F4F7;
+      padding-top: 0;
+      background-color: #fff;
       text-align: right;
 
       .modal-btn {
@@ -111,10 +112,6 @@
 
 .modal-form-order, .modal-call {
   .modalDialog {
-    .modalHeader {
-      padding-bottom: 0;
-    }
-
     .modalBody {
       text-align: left;
       background-color: #fff;
@@ -161,14 +158,14 @@
   }
 }
 
-@media (max-height: 800px) and (max-width: 450px) {
+@media (max-height: 800px) and (max-width: 600px) {
   .modal-form-order {
     .modalDialog {
       max-height: 95vh;
+    }
 
-      .modalBody {
-        overflow: auto;
-      }
+    .modalBody {
+      overflow-y: auto;
     }
   }
 }
