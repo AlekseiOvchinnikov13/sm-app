@@ -45,6 +45,7 @@
   .modalDialog {
     width: 100%;
     max-width: 450px;
+    max-height: 95vh;
     margin: 0 5px;
 
     background-color: #fff;
@@ -59,7 +60,7 @@
     justify-content: space-between;
 
     .modalHeader, .modalBody {
-      padding: 24px;
+      padding: 17px;
       width: 100%;
     }
 
@@ -95,6 +96,10 @@
       padding-top: 0;
       background-color: #fff;
       text-align: right;
+
+      .rcs-custom-scroll .rcs-inner-handle {
+        background-color: rgba(#B132FF, .7);
+      }
 
       .modal-btn {
         max-width: 230px;
@@ -154,18 +159,6 @@
   .modal-form-order {
     .modalDialog {
       max-width: 95vw;
-    }
-  }
-}
-
-@media (max-height: 800px) and (max-width: 600px) {
-  .modal-form-order {
-    .modalDialog {
-      max-height: 95vh;
-    }
-
-    .modalBody {
-      overflow-y: auto;
     }
   }
 }

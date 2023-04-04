@@ -8,6 +8,8 @@ import classNames from "classnames";
 import {menuItems} from "../../data/data";
 import ModalWindow from "../ModalWindow";
 import FormOrder from "../Forms/FormOrder";
+import CustomScroll from 'react-custom-scroll';
+import 'react-custom-scroll/dist/customScroll.css'
 
 const Header = ({className}) => {
   const classes = classNames('header', className)
@@ -54,10 +56,12 @@ const Header = ({className}) => {
           className={'modal-form-order'}
           withClose
         >
-          <FormOrder
-            onClose={modalOrderHandler}
-            successHandler={successHandler}
-          />
+          <CustomScroll>
+            <FormOrder
+              onClose={modalOrderHandler}
+              successHandler={successHandler}
+            />
+          </CustomScroll>
         </ModalWindow>}
       {isModalSuccessOpen &&
         <ModalWindow

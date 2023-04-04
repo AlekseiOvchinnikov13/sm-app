@@ -1,7 +1,7 @@
 #form-order {
   .form-fields {
     .order-input + .order-input {
-      margin-top: 16px;
+      margin-top: 12px;
     }
 
     .checkbox {
@@ -33,5 +33,11 @@
     &:disabled {
       background-color: rgba(#B132FF, .5);
     }
+  }
+}
+
+@media (max-height: 720px) {
+  #form-order {
+    height: 460px;
   }
 }

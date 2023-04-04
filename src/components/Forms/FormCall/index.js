@@ -4,7 +4,7 @@ import {useFormField} from "../../../hooks/useFormField";
 
 const FormCall = ({onSuccess}) => {
   const nameField = useFormField()
-  const phoneField = useFormField()
+  const phoneField = useFormField('', true)
 
   const sendMsg = () => {
     const {value: nameValue} = nameField;

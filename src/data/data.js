@@ -888,7 +888,7 @@ export const FormOrderInputsArray = [
     label: 'Номер телефона',
     isRequired: true,
     type: 'tel',
-    min: '11',
+    min: '6',
     max: '12',
     placeholder:'+7 (___) ___-__-__'
   },

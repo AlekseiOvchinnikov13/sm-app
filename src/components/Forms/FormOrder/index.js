@@ -18,9 +18,11 @@ const FormOrder = ({onClose, successHandler}) => {
 
   const handleInputChange = useCallback((e) => {
     const {name, value, type, checked} = e.target;
-    setFormValues((prevValues) => ({
+    const valueInput = type === 'tel' ? value.replaceAll(/[^\d+]/g, '') : value
+
+    setFormValues(prevValues => ({
       ...prevValues,
-      [name]: type === 'checkbox' ? checked : value,
+      [name]: type === 'checkbox' ? checked : valueInput,
     }));
   }, []);
 

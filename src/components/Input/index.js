@@ -2,7 +2,7 @@ import './style.scss'
 import classNames from "classnames";
 import {Select} from "antd";
 
-const Input = ({data: {id, className, type, label, placeholder, isRequired, size, options, min, ...rest}, value, onChange}) => {
+const Input = ({data: {id, className, type, label, isRequired, size, options, ...rest}, value, onChange}) => {
   const classes = classNames('order-input', className, size === 's' ? 'small-input' : size === 'm' ? 'medium-input' : 'long-input')
   const {Option} = Select;
 
@@ -41,9 +41,7 @@ const Input = ({data: {id, className, type, label, placeholder, isRequired, size
         : <input
           id={id}
           type={type || 'text'}
-          min={min}
           name={id}
-          placeholder={placeholder}
           required={isRequired}
           value={value}
           onChange={onChange}
