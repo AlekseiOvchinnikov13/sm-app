@@ -41,3 +41,9 @@
     height: 460px;
   }
 }
+
+@media (max-height: 575px) {
+  #form-order {
+    height: 400px;
+  }
+}
