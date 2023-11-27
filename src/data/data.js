@@ -229,11 +229,11 @@ export const contactsArray = [
   {
     title: 'Отдел продаж',
     phone: '+7 903 307 94 23',
-    email: 'info@smartapp.su'
+    email: 'infoit@smartapp.su'
   },
   {
     title: 'Техническая поддержка',
-    phone: ['+7 909 306 11 11', '+7 967 779 99 71'],
+    phone: ['+7 962 552 69 49'],
     email: 'support@smartapp.su'
   }
 ];

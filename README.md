@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+nvm use 16.20.2
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
