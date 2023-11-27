@@ -12,8 +12,8 @@ const Footer = ({className}) => {
     <footer className={classes}>
       <div className="footer-inner-wrapper container">
         <div className="footer__left-wrapper">
-          <p className="left-wrapper__copyright footer-text">&copy;&nbsp;ООО "УМНЫЕ МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ", 2022{currentYear > 2022 && `-${currentYear}`}</p>
-          <a href="tel:+79033079423" className="left-wrapper__phone footer-text">+7 903 307 94 23</a>
+          <p className="left-wrapper__copyright footer-text">&copy;&nbsp;ООО "УМНЫЕ МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ", 2022{currentYear > 2022 && `-${currentYear}`}, Казань</p>
+          <a href="#" className="left-wrapper__phone footer-text"></a>
           <a href="mailto:infoit@smartapp.su" className="left-wrapper__email footer-text">infoit@smartapp.su</a>
         </div>
         <div className="footer__right-wrapper">
