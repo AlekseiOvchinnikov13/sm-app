@@ -12,7 +12,11 @@ const Footer = ({className}) => {
     <footer className={classes}>
       <div className="footer-inner-wrapper container">
         <div className="footer__left-wrapper">
-          <p className="left-wrapper__copyright footer-text">&copy;&nbsp;ООО "УМНЫЕ МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ", 2022{currentYear > 2022 && `-${currentYear}`}, Казань</p>
+          <p className="left-wrapper__copyright footer-text">
+            &copy;&nbsp;ООО "УМНЫЕ МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ", 2022{currentYear > 2022 && `-${currentYear}`}, Казань
+            <br/>
+            МИНЦИФРЫ в реестре №15640
+          </p>
           <a href="#" className="left-wrapper__phone footer-text"></a>
           <a href="mailto:infoit@smartapp.su" className="left-wrapper__email footer-text">infoit@smartapp.su</a>
         </div>

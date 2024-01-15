@@ -16,6 +16,10 @@
   .top-section {
     padding: 70px 0;
   }
+  .top-section__accreditation {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -39,9 +43,6 @@
   }
   .top-section.top-section {
     padding: 30px 0 20px;
-  }
-  .top-section__title.top-section__title {
-    margin-bottom: 40px;
   }
 }
 

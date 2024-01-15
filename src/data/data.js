@@ -6,10 +6,15 @@ import cardArrow from "../components/Pages/Home/-ProductCard/img/card-arrow.svg"
 import productsImg from "../components/Pages/Home/-CompetenceCard/img/competence-products.svg";
 import servicesImg from "../components/Pages/Home/-CompetenceCard/img/competence-services.svg";
 
-import oilcargo from "../components/Pages/Home/img/oilcargo.png";
-import tateco from "../components/Pages/Home/img/tateco.png";
-import gazprom from "../components/Pages/Home/img/gazprom.png";
-import parus from "../components/Pages/Home/img/parus.png";
+import oilcargo from "../components/Pages/Home/img/clients/oilcargo.png";
+import tateco from "../components/Pages/Home/img/clients/tateco.png";
+import gazprom from "../components/Pages/Home/img/clients/gazprom.png";
+import parus from "../components/Pages/Home/img/clients/parus.png";
+import amt from "../components/Pages/Home/img/clients/amt.png";
+import kambeacon from "../components/Pages/Home/img/clients/kambeacon.png";
+import pm from "../components/Pages/Home/img/clients/pm.png";
+import rivc from "../components/Pages/Home/img/clients/rivc.png";
+import tritonetrade from "../components/Pages/Home/img/clients/tritontrade.png";
 
 import sbmTask1 from "../components/Pages/Products/-SectionPictureBackground/img/sbm-task1.jpg";
 import sbmTask2 from "../components/Pages/Products/-SectionPictureBackground/img/sbm-task2.jpg";
@@ -107,7 +112,9 @@ export const productCards = [
   },
   {
     title: 'Мобильное приложение водителя ',
-    text: 'Подключается к вашей системе, помогает держать  под контролем все этапы погрузки и транспортировки',
+    text: `Подключается к вашей системе, помогает держать  под контролем все этапы погрузки и транспортировки
+    <br/><br/>
+    <span>Мобильное приложение водителя состоит в реестре Российского ПО Реестровая запись №12253 от 09.12.2021</span>`,
     alternativeText: 'Узнать больше о мобильном приложении водителя',
     href: '/products/mad',
     className: 'mad',
@@ -193,6 +200,11 @@ export const brandsArray = [
   {img: gazprom, tooltip: 'Газпром'},
   {img: parus, tooltip: 'Парус'},
   {img: oilcargo, tooltip: 'Ойл Карго'},
+  {img: amt, tooltip: 'АМТ' },
+  {img: kambeacon, tooltip: 'Камский Бекон' },
+  {img: pm, tooltip: 'РМ' },
+  {img: rivc, tooltip: 'РИВЦ' },
+  {img: tritonetrade, tooltip: 'Triton Trade' }
 ];
 
 /**
