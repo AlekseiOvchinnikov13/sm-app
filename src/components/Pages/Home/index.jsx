@@ -24,9 +24,9 @@ const Home = () => (
         className="top-section__title"
         text='Разработка и внедрение сложного программного обеспечения'
       />
-      <p className="top-section__accreditation">
+      {/*<p className="top-section__accreditation">
         Аккредитации IT компании МИНЦИФРЫ номер в реестре 15640
-      </p>
+      </p>*/}
       <Link to="/contacts" className="top-section__btn" id='link-with-us'>
         Связаться с нами
       </Link>
